@@ -1,0 +1,9 @@
+$small: 411px;
+$medium: 768px;
+$big: 1024px;
+
+@mixin media-break-up($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}

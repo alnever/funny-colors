@@ -1,0 +1,82 @@
+.swtk-vertical-sidebar .widget {
+    @include widget($font-primary, $font-smaller, $secondary, $font-primary, $font-code, $primary, $accent);
+    padding-bottom: $padding;
+
+    li {
+        padding-bottom: $padding / 4;
+    }
+}
+
+.swtk-horizontal-sidebar .widget {
+    @include horizontal-widget($font-primary, $font-smaller, $secondary, $font-primary, $font-code, $primary, $accent);
+    padding-bottom: $padding;
+}
+
+.widget_archive {
+    .swtk-widget-archive-count {
+        @include badge();
+    }
+}
+
+.widget_categories {
+    .swtk-widget-category-count {
+        @include badge();
+    }
+}
+
+.swtk-vertical-sidebar .widget_recent_entries,
+.swtk-vertical-sidebar .widget_recent_comments {
+    @include widget-column-elements();
+}
+
+.swtk-horizontal-sidebar .widget_recent_entries,
+.swtk-horizontal-sidebar .widget_recent_comments {
+    @include widget-row-elements();
+    span {
+        margin-left: $padding/2;
+        margin-right: $padding/2;
+    }
+    a {
+        padding-left: $padding/2 !important;
+        padding-right: $padding/2 !important;
+    }
+}
+
+
+.widget_tag_cloud {
+    a {
+        @include badge-outline($font-primary, $font-code, $primary);
+        display: inline-flex;
+        padding: $padding / 5;
+        margin: $padding / 5;
+        white-space: nowrap;
+
+        span {
+            padding-left: $padding / 5;
+        }
+    }
+}
+
+.widget_calendar {
+    @include widget-calendar($font-primary, $font-regular, $secondary, $font-primary, $font-code, $primary, $accent);
+}
+
+.widget_search {
+    padding: 0 0 $padding 0;
+}
+
+.swtk-vertical-sidebar .widget_pages {
+    @include vertical-menu($font-primary, $font-code, $primary, $secondary, none);
+}
+
+.swtk-horizontal-sidebar .widget_pages {
+    @include horizontal-sidebar-menu($font-primary, $font-code, $primary, $secondary, none);
+}
+
+.swtk-horizontal-sidebar .widget_media_gallery {
+    @include media-gallery(4);
+}
+
+.swtk-vertical-sidebar .widget_media_gallery {
+    @include media-gallery(1);
+}

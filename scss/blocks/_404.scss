@@ -1,0 +1,27 @@
+@mixin error-404() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .swtk-404-number {
+        &:before {
+            content: '404';
+            font-family: $font-primary;
+            font-size: $font-enorm * 3;
+            color: $accent;
+            opacity: 0.3;
+            font-weight: bold;
+            width: auto;
+            white-space: nowrap;
+        }
+
+        width: 0;
+    }
+
+    .swtk-404-message {
+        font-family: $font-primary;
+        font-size: $font-enorm;
+        color: $primary;
+    }
+}

@@ -1,0 +1,30 @@
+@mixin link($color, $hover-color, $underline: false) {
+    color: $color;
+    text-decoration: none;
+
+    &:link {
+
+    }
+
+    &:hover {
+      color: $hover-color;
+      @if ($underline == true) {
+        text-decoration: underline;
+      } @else {
+        text-decoration: none;
+      }
+    }
+
+    &:active {
+      color: $hover-color;
+      @if ($underline == true) {
+        text-decoration: underline;
+      } @else {
+        text-decoration: none;
+      }
+    }
+
+    &:visited{
+
+    }
+}

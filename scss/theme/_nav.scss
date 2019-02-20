@@ -1,0 +1,58 @@
+nav.swtk-navbar {
+  @include horizontal-menu($font-primary, $font-smaller, $white, $white, $secondary);
+  .swtk-brand {
+      white-space: nowrap;
+      &:hover {
+          background-color: $accent;
+          font-weight: bold;
+      }
+  }
+  .swtk-toggle {
+      @include badge-outline($font-primary, $font-small, $primary);
+  }
+
+  li {
+    &:hover {
+        background-color: $accent;
+        font-weight: bold;
+    }
+  }
+}
+
+.swtk-vertical-sidebar .menu,
+.swtk-vertical-menu {
+    @include vertical-menu($font-primary, $font-regular, $primary, $secondary, none);
+}
+
+div.swtk-pagination,
+div.swtk-comments-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include pagination();
+
+    a {
+        @include badge-outline($font-primary, $font-regular, $primary);
+    }
+
+    span.current {
+        @include badge-outline($font-primary, $font-regular, $dark);
+    }
+
+    a, span.current {
+        padding: $padding / 2;
+        border-radius: 0;
+        margin: 0;
+
+        &:hover {
+            border-radius: 0;
+        }
+    }
+}
+
+.swtk-posts-navigation {
+    @include posts-navigation();
+    padding: $padding;
+    font-family: $font-primary;
+    font-size: $font-code;
+}

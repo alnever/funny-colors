@@ -1,0 +1,59 @@
+@mixin footer-with-icons() {
+    display: flex;
+    flex-direction: column;
+    background-color: $light;
+
+    .swtk-footer-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: $padding;
+
+        @include media-break-up($medium) {
+            padding: $padding * 2;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .swtk-footer_text {
+            font-family: $font-primary;
+            font-size: $font-regular;
+            color: $dark;
+
+            width: 100%;
+
+            @include media-break-up($medium){
+                width:  75%;
+            }
+        }
+        .swtk-footer_links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            font-family: $font-primary;
+            font-size: $font-regular;
+            color: $dark;
+
+            width: 100%;
+            padding: $padding;
+
+            @include media-break-up($medium){
+                width:  25%;
+                padding: 0;
+            }
+
+            img {
+                max-width: 48px;
+                max-height: 48px;
+            }
+        }
+    }
+
+    .swtk-footer-creditial {
+        padding: $padding;
+        text-align: center;
+    }
+
+}

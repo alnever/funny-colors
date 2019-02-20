@@ -1,0 +1,19 @@
+@mixin input-text($font, $font-size, $color) {
+    font-family: $font;
+    font-size: $font-size;
+    color: $color;
+    padding: $padding / 2;
+
+    border: 1px solid $color;
+    border-radius: $border-radius;
+}
+
+@mixin button($font, $font-size, $color) {
+    @include badge($font, $font-size, $color);
+    padding: $padding / 2;
+}
+
+@mixin button-outline($font, $font-size, $color) {
+    @include badge-outline($font, $font-size, $color);
+    padding: $padding / 2;
+}

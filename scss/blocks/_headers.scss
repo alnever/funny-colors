@@ -1,0 +1,38 @@
+@mixin header($bg-color, $bg-image : '') {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: $padding * 2;
+
+    background-color: $bg-color;
+
+    background-image: $bg-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .swtk-header-logo {
+        padding: $padding;
+    }
+
+    .swtk-header-text-block {
+        padding: $padding;
+    }
+}
+
+@mixin header-title($font, $font-size, $color) {
+    .swtk-header-title {
+        font-family: $font;
+        font-size: $font-size;
+        color: $color;
+    }
+}
+
+@mixin header-text($font, $font-size, $color) {
+    .swtk-header-text {
+        font-family: $font;
+        font-size: $font-size;
+        color: $color;
+    }
+}

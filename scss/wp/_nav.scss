@@ -1,0 +1,355 @@
+/*
+* horizontal menu
+*/
+
+@mixin horizontal-menu($font, $font-size, $color, $hover-color, $bg-color) {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  justify-content: space-between;
+
+  @include media-break-up($medium) {
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+
+  background-color: $bg-color;
+
+  & > .swtk-brand-toggle {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      align-self: baseline;
+      justify-content: space-between;
+      width: 100%;
+
+      @include media-break-up($medium) {
+          width: auto;
+      }
+
+      & > .swtk-brand {
+        float: left;
+        padding: $padding;
+
+        & > a {
+          @include link($color, $hover-color, false);
+          font-family: $font;
+          font-size: $font-size;
+        }
+      }
+
+      & > .swtk-toggle {
+        display: flex;
+        padding-top: $padding / 4;
+        padding-bottom: $padding / 4;
+        padding-left: $padding / 2;
+        padding-right: $padding / 2;
+
+        margin-right: $padding;
+
+
+        @include media-break-up($medium) {
+            display: none;
+        }
+    } /* .brand-toggle */
+  } /* .brand-toggle */
+
+
+
+  & >.swtk-collapsed {
+    display: none;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+
+    @include media-break-up($medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* navbar inside collapsed */
+    & > div.swtk-nav {
+      & > div {
+        /* item list*/
+        & > ul {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0;
+          margin: 0;
+
+          @include media-break-up($medium) {
+            flex-direction: row;
+          }
+
+          /* menu item */
+          & > li {
+            list-style-type: none;
+            padding: 0;
+            padding: $padding;
+
+            a {
+              @include link($color, $hover-color, false);
+              font-family: $font;
+              font-size: $font-size;
+            }
+
+            /* menu items with submenus */
+            &.page_item_has_children,
+            &.menu-item-has-children {
+
+                @include media-break-up($medium) {
+                    position: relative;
+                }
+
+               .swtk-super-item {
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  align-items: baseline;
+                  justify-content: space-between;
+              }
+
+              /* submenu */
+              ul.children,
+              ul.sub-menu {
+                  @include media-break-up($medium) {
+                        position: absolute;
+                  }
+                display: none;
+                flex-direction: column;
+                padding-left: 0;
+
+                background-color: $bg-color;
+
+                @include media-break-up($medium) {
+                    min-width: 300px;
+                    border: 1px solid adjust-color($bg-color, -34, -34, -34);
+                    border-radius: $border-radius;
+                }
+
+                /* submenu items */
+                & > li {
+                  list-style-type: none;
+                  padding-top: $padding;
+                  padding-left: $padding;
+                  padding-bottom: $padding;
+
+                  @include media-break-up($medium) {
+                      padding-right: $padding;
+                  }
+
+                  & > a {
+                    @include link($color, $hover-color, false);
+                    font-family: $font;
+                    font-size: $font-size - 2px;
+                  }
+                }
+              }
+            } /* .page_item_has_children */
+          } /* li - menu-item or page_item */
+        } /* ul */
+      } /* div.menu */
+    } /* div.nav */
+  } /* .collapsed */
+} /* end of mixin horizontal-menu */
+
+/*
+* vertical menu
+*/
+
+@mixin vertical-menu($font, $font-size, $color, $hover-color, $bg-color) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    background-color: $bg-color;
+
+    /* item list*/
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-left: 0;
+
+      /* menu item */
+      & > li {
+        list-style-type: none;
+        padding: $padding / 2;
+        padding-left: 0;
+        width: 100%;
+
+        a {
+          @include link($color, $hover-color, false);
+          font-family: $font;
+          font-size: $font-size;
+        }
+
+        /* menu items with submenus */
+        &.page_item_has_children,
+        &.menu-item-has-children {
+            display: flex;
+            flex-direction: column;
+
+           .swtk-super-item {
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              align-items: baseline;
+              justify-content: space-between;
+          }
+
+          /* submenu */
+          ul.children,
+          ul.sub-menu {
+            display: none;
+            flex-direction: column;
+            padding-left: 0;
+
+            background-color: $bg-color;
+
+            /* submenu items */
+            & > li {
+              list-style-type: none;
+              padding-top: $padding;
+              padding-left: $padding;
+              padding-bottom: $padding;
+
+              & > a {
+                @include link($color, $hover-color, false);
+                font-family: $font;
+                font-size: $font-size - 2px;
+              }
+            }
+          }
+        } /* .page_item_has_children */
+      } /* li - menu-item or page_item */
+    } /* ul */
+
+}
+
+
+/*
+* Horizontal menu for horizontal sidebars
+*/
+
+@mixin horizontal-sidebar-menu($font, $font-size, $color, $hover-color, $bg-color) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    @include media-break-up($medium) {
+      flex-direction: row;
+      justify-content: none;
+    }
+
+    background-color: $bg-color;
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+
+      @include media-break-up($medium) {
+        flex-direction: row;
+      }
+
+      /* menu item */
+      & > li {
+        display: flex;
+        align-items: baseline;
+        list-style-type: none;
+        padding: $padding;
+        width: 100%;
+
+        @include media-break-up($medium) {
+            width: auto;
+        }
+
+        a {
+          @include link($color, $hover-color, false);
+          font-family: $font;
+          font-size: $font-size;
+        }
+
+        /* menu items with submenus */
+        &.page_item_has_children,
+        &.menu-item-has-children {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            @include media-break-up($medium) {
+                flex-direction: row;
+            }
+
+           .swtk-super-item {
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              align-items: baseline;
+              justify-content: space-between;
+
+              @include media-break-up($medium) {
+                  width: auto;
+              }
+          }
+
+          /* submenu */
+          ul.children,
+          ul.sub-menu {
+            display: none;
+            flex-direction: column;
+
+            background-color: $bg-color;
+
+            @include media-break-up($medium) {
+                flex-direction: row;
+            }
+
+            /* submenu items */
+            & > li {
+              list-style-type: none;
+
+              @include media-break-up($medium) {
+                  padding: 0;
+                  padding-left: $padding;
+                  padding-right: $padding;
+              }
+
+              & > a {
+                @include link($color, $hover-color, false);
+                font-family: $font;
+                font-size: $font-size - 2px;
+              }
+            }
+          }
+        } /* .page_item_has_children */
+      } /* li - menu-item or page_item */
+    } /* ul */
+
+} /* end of mixin horizontal-menu */
+
+
+/*
+* posts pagination
+*/
+
+@mixin pagination() {
+    nav.swtk-pagination {
+        & > .screen-reader-text {
+            display: none;
+        }
+    }
+}
+
+@mixin posts-navigation() {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}

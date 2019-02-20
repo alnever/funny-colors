@@ -1,0 +1,92 @@
+.swtk-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: $content_width;
+  margin: auto;
+  background-color: $white;
+} /* .container */
+
+.swtk-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav.swtk-navbar {
+    width: 100%;
+}
+
+header, .swtk-header {
+  @include column(100%, $content-align);
+  @include header($primary);
+  @include header-title($font-primary, $font-enorm, $white);
+  @include header-text($font-secondary, $font-large, $white);
+}
+
+.swtk-content {
+  @include row(100%, $content-align, nowrap);
+  padding: $padding;
+}
+
+.swtk-posts {
+    @include col-9();
+}
+
+.swtk-row {
+  @include row();
+}
+
+footer, .swtk-footer {
+  @include column(100%, $content-align);
+  @include footer-with-icons();
+
+  font-family: $font-primary;
+  font-size: $font-code;
+  
+  background-color: $secondary;
+  color: $white;
+}
+
+.swtk-left-sidebar {
+  @include col-3();
+  padding: $padding;
+  padding-top: 0;
+  display: none;
+}
+
+.swtk-right-sidebar {
+  @include col-3();
+  padding: 0 0 0 $padding;
+}
+
+.swtk-header-sidebar {
+  @include column($content-width, $content-align);
+  padding: $padding;
+  display: none;
+}
+
+.swtk-footer-sidebar {
+  @include row(100%, $content-align, wrap);
+  padding: $padding;
+
+  * > .swtk-vertical-sidebar {
+      @include col-4();
+  }
+}
+
+.swtk-menu-sidebar {
+  @include row(auto, $content-align, nowrap);
+  padding: $padding;
+ align-self: baseline;
+
+  @include media-break-up($medium) {
+    padding: 0;
+  }
+
+  display: none;
+}
+
+.swtk-404 {
+    @include error-404();
+}

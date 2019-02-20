@@ -1,0 +1,17 @@
+@mixin comments() {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-family: $font-primary;
+    font-size: $font-regular;
+
+    .swtk-comments-title {
+        @extend .swtk-h5;
+    }
+
+    .comment-form-comment {
+        display: flex;
+        flex-direction: column;
+    }
+}

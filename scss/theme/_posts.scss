@@ -1,0 +1,118 @@
+article.swtk-post-index {
+  @include col-6();
+  @include simple-column-post();
+
+  @include post-image(block, 2) {
+      max-width: 100%;
+      margin-bottom: $padding / 2;
+
+      max-height: 200px;
+      overflow: hidden;
+  }
+
+  @include post-date(flex, 1) {
+      font-family: $font-primary;
+      font-size: $font-regular;
+      color: $accent;
+      font-variant: small-caps;
+      font-variant-caps: small-caps;
+      font-stretch: expanded;
+
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-title(flex, 3) {
+      @extend .swtk-h5;
+      margin-bottom: $padding / 2;
+
+      a {
+          color: $primary;
+          font-variant: small-caps;
+
+          &:hover {
+              text-decoration: none;
+              color: $accent;
+          }
+      }
+  }
+
+  @include post-author(flex, 4) {
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-content(flex, 5) {
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-categories(none, 6) {
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-tags(none, 7) {
+      margin-bottom: $padding / 2;
+  }
+}
+
+article.swtk-post-single {
+  @include col-12();
+  @include simple-column-post();
+}
+
+.sticky,
+article.swtk-post-sticky {
+  @include col-12();
+  @include simple-row-post();
+
+  background-color: $light;
+  padding: $padding;
+  border: 1px solid $accent;
+
+
+  @include post-image(block, 0) {
+      max-width: 50%;
+      padding-right: $padding;
+      float: right;
+  }
+
+  @include post-date(flex, 1) {
+      font-family: $font-primary;
+      font-size: $font-regular;
+      color: $accent;
+      font-variant: small-caps;
+      font-variant-caps: small-caps;
+      font-stretch: expanded;
+
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-title(flex, 2) {
+      @extend .swtk-h4;
+      margin-bottom: $padding / 2;
+
+      a {
+          color: $secondary;
+          font-variant: small-caps;
+
+          &:hover {
+              text-decoration: none;
+              color: $accent;
+          }
+      }
+  }
+
+  @include post-author(flex, 3) {
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-content(flex, 4) {
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-categories(none, 5) {
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-tags(none, 6) {
+      margin-bottom: $padding / 2;
+  }
+}

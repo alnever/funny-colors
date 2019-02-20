@@ -1,0 +1,154 @@
+@mixin row($width: 100%, $align-self: normal, $wrap: wrap) {
+  display: flex;
+  flex-direction: column;
+  align-self: $align-self;
+  width : 100%;
+
+  @include media-break-up($medium) {
+    flex-direction: row;
+    flex-wrap: $wrap;
+    width: $width;
+  }
+
+
+}
+
+@mixin column($width: 100%, $align-self: normal) {
+  display: flex;
+  flex-direction: column;
+  align-self: $align-self;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: $width;
+  }
+}
+
+@mixin col-1 {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 12);
+}
+
+@mixin col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% / 6);
+  }
+}
+
+@mixin col-3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% / 4);
+  }
+}
+
+@mixin col-4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% / 3);
+  }
+}
+
+@mixin col-5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% * 5 / 12);
+  }
+}
+
+@mixin col-6 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: 50%;
+  }
+}
+
+@mixin col-7 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% * 7 / 12);
+  }
+}
+
+@mixin col-8 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% * 2 / 3);
+  }
+}
+
+@mixin col-9 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% * 3 / 4);
+  }
+}
+
+@mixin col-10 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% * 5 / 6);
+  }
+}
+
+@mixin col-11 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include media-break-up($medium) {
+    width: calc(100% * 11 / 12);
+  }
+}
+
+
+@mixin col-12 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.swtk-horizontal-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    @include media-break-up($medium) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.swtk-vertical-sidebar {
+    display: flex;
+    flex-direction: column;
+}

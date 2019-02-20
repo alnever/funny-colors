@@ -1,0 +1,141 @@
+@mixin post() {
+    display: flex;
+    padding: $padding;
+
+    * {
+        min-height: 0;
+        min-width: 0;
+    }
+}
+
+@mixin simple-column-post() {
+    @include post();
+    flex-direction: column;
+
+    & > * {
+       width: 100%;
+    }
+}
+
+@mixin simple-row-post() {
+    @include post();
+    flex-direction: column;
+
+    width: 100%;
+
+    .swtk-post-image, .swtk-post-text {
+        width: 100%;
+    }
+
+    .swtk-post-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include media-break-up($medium) {
+        flex-direction: row;
+        .swtk-post-image, .swtk-post-text {
+            width: 50%;
+        }
+    }
+}
+
+@mixin serpantine-row-post() {
+    @include simple-row-post();
+
+    @include media-break-up($medium) {
+        &:nth-child(odd) {
+            flex-direction: row;
+            .swtk-post-image {
+                padding-right: $padding / 2;
+                padding-left: 0;
+            }
+
+            .swtk-post-text {
+                padding-left: $padding / 2;
+                padding-right: 0;
+            }
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            .swtk-post-image {
+                padding-left: $padding / 2;
+                padding-right: 0;
+            }
+
+            .swtk-post-text {
+                padding-right: $padding / 2;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+/*
+* Post parts defintions
+*/
+
+@mixin post-image($display: flex, $order: 0) {
+    .swtk-post-image {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
+
+@mixin post-title($display: flex, $order: 0) {
+    .swtk-post-title {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
+
+@mixin post-author($display: flex, $order: 0) {
+    .swtk-post-author {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
+
+@mixin post-date($display: flex, $order: 0) {
+    .swtk-post-date {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
+
+@mixin post-content($display: flex, $order: 0) {
+    .swtk-post-content {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
+
+@mixin post-categories($display: flex, $order: 0) {
+    .swtk-post-categories {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
+
+@mixin post-tags($display: flex, $order: 0) {
+    .swtk-post-tags {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
+
+@mixin post-link($display: flex, $order: 0) {
+    .swtk-post-link {
+        display: $display;
+        order: $order;
+        @content;
+    }
+}
