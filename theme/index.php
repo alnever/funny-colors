@@ -65,12 +65,19 @@
                             <div class="swtk-post-text">
                                 <div class="swtk-post-title">
                                     <a href="<?php echo get_permalink(); ?>">
-                                        <?php the_title(); ?>
+                                        <?php
+                                            if (get_the_title() == "") {
+                                                echo get_the_date("F d, Y");
+                                            } else {
+                                                the_title();
+                                            }
+                                         ?>
                                     </a>
                                 </div>
                                 <!-- post before main text -->
                                 <div class="swtk-post-author">
-                                    <?php the_author(); ?>
+                                    <img class="swtk-icon" src="<?php echo get_theme_file_uri('/icons/edit.svg'); ?>"/ >
+                                    <?php the_author_link(); ?>
                                 </div>
                                 <div class="swtk-post-date">
                                     <?php echo get_the_date('F d, Y'); ?>
@@ -78,12 +85,18 @@
                                 <div class="swtk-post-content">
                                     <?php the_excerpt(); ?>
                                 </div>
-                                <div class="swtk-post-categories">
-                                    <?php the_category(); ?>
-                                </div>
-                                <div class="swtk-post-tags">
-                                    <?php the_tags(); ?>
-                                </div>
+                                <?php if (has_category()): ?>
+                                    <div class="swtk-post-categories">
+                                        <img src="<?php echo get_theme_file_uri('/icons/folder.svg') ?>" class="swtk-icon">
+                                        <?php the_category(); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (has_tag()): ?>
+                                    <div class="swtk-post-tags">
+                                        <img src="<?php echo get_theme_file_uri('/icons/price-tag.svg') ?>" class="swtk-icon">
+                                        <?php the_tags('','',''); ?>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </article>
                     <?php
@@ -106,12 +119,19 @@
                                 <!-- post header -->
                                 <div class="swtk-post-title">
                                     <a href="<?php echo get_permalink(); ?>">
-                                        <?php the_title(); ?>
+                                        <?php
+                                            if (get_the_title() == "") {
+                                                echo get_the_date("F d, Y");
+                                            } else {
+                                                the_title();
+                                            }
+                                         ?>
                                     </a>
                                 </div>
                                 <!-- post before main text -->
                                 <div class="swtk-post-author">
-                                    <?php the_author(); ?>
+                                    <img class="swtk-icon" src="<?php echo get_theme_file_uri('/icons/edit.svg'); ?>"/ >
+                                    <?php the_author_link(); ?>
                                 </div>
                                 <div class="swtk-post-date">
                                     <?php echo get_the_date('F d, Y'); ?>
@@ -119,20 +139,23 @@
                                 <div class="swtk-post-content">
                                     <?php the_excerpt(); ?>
                                 </div>
-                                <div class="swtk-post-categories">
-                                    <?php the_category(); ?>
-                                </div>
-                                <div class="swtk-post-tags">
-                                    <?php the_tags(); ?>
-                                </div>
+                                <?php if (has_category()): ?>
+                                    <div class="swtk-post-categories">
+                                        <img src="<?php echo get_theme_file_uri('/icons/folder.svg') ?>" class="swtk-icon">
+                                        <?php the_category(); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (has_tag()): ?>
+                                    <div class="swtk-post-tags">
+                                        <img src="<?php echo get_theme_file_uri('/icons/price-tag.svg') ?>" class="swtk-icon">
+                                        <?php the_tags('','',''); ?>
+                                    </div>
+                                <?php endif; ?>
                             </article>
                           <?php endwhile; ?>
                     </div>
                     <div class="swtk-pagination">
-                        <?php the_posts_pagination([
-                                'screen_reader_text' => ''
-                            ]);
-                        ?>
+                        <?php the_posts_pagination(); ?>
                     </div>
                 <?php endif; ?>
             </div>

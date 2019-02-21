@@ -1,11 +1,6 @@
 @mixin post() {
     display: flex;
     padding: $padding;
-
-    * {
-        min-height: 0;
-        min-width: 0;
-    }
 }
 
 @mixin simple-column-post() {

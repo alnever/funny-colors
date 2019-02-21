@@ -87,35 +87,36 @@
 
 /* special definitions fot categories widget */
 
-.swtk-vertical-sidebar .widget_categories {
-    li.super-category {
+.swtk-vertical-sidebar > .widget_categories {
+    li.swtk-super-category {
         display: flex;
         flex-direction: column;
 
-        .super-category-title {
+        .swtk-super-category-title {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
+            padding-bottom: $padding / 2;
         }
 
         ul {
             padding-left: $padding / 2;
+            list-style-type: none;
 
-            li:not(.super-category) {
+            li:not(.swtk-super-category) {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                padding-bottom: $padding / 2;
 
-                list-style-type: none;
             }
         }
     } /* .super-category */
 } /* .widget_categories */
 
-.swtk-horizontal-sidebar .widget_categories {
+.swtk-horizontal-sidebar > .widget_categories {
 
-    .widget-category-count {
+    .swtk-widget-category-count {
         margin-left: $padding / 2;
         margin-right: $padding / 2;
     }

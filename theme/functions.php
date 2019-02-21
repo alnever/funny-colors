@@ -46,9 +46,9 @@ function funny_colors_enqueue_styles_scripts() {
 	wp_enqueue_style('swtk-style', get_stylesheet_uri(), [], wp_get_theme()->get('Version') );
 	wp_enqueue_style('swtk-style-all', get_theme_file_uri('/css/style.css'), ['swtk-style'], wp_get_theme()->get('Version') );
 
-	wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
-	wp_enqueue_script('swtk-script', get_theme_file_uri('/js/index.js'), ['jquery'], wp_get_theme()->get('Version'), true );
+    wp_enqueue_script('swtk-jquery', get_theme_file_uri('/js/jquery-3.3.1.js'), [], null, true );
+	wp_enqueue_script('swtk-script', get_theme_file_uri('/js/index.js'), ['swtk-jquery'], wp_get_theme()->get('Version'), true );
+
 	if( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -85,6 +85,10 @@ function funny_colors_register_widget_areas() {
   register_sidebar([
     'name' => __('Footer right sidebar','funny-colors'),
     'id' => 'footer-right-sidebar',
+  ]);
+  register_sidebar([
+    'name' => __('Header sidebar','funny-colors'),
+    'id' => 'header-sidebar',
   ]);
 }
 

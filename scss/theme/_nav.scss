@@ -20,8 +20,13 @@ nav.swtk-navbar {
 }
 
 .swtk-vertical-sidebar .menu,
-.swtk-vertical-menu {
+.swtk-vertical-menu,
+.swtk-vertical-sidebar div[class^='menu'] {
     @include vertical-menu($font-primary, $font-regular, $primary, $secondary, none);
+}
+
+.swtk-horizontal-sidebar div[class^='menu'] {
+    @include horizontal-sidebar-menu($font-primary, $font-smaller, $primary, $secondary, none);
 }
 
 div.swtk-pagination,
@@ -32,21 +37,16 @@ div.swtk-comments-pagination {
     @include pagination();
 
     a {
-        @include badge-outline($font-primary, $font-regular, $primary);
+        @include badge-outline($font-primary, $font-regular, $secondary);
     }
 
     span.current {
-        @include badge-outline($font-primary, $font-regular, $dark);
+        @include badge-no-hover($font-primary, $font-regular, $secondary);
     }
 
     a, span.current {
         padding: $padding / 2;
-        border-radius: 0;
         margin: 0;
-
-        &:hover {
-            border-radius: 0;
-        }
     }
 }
 

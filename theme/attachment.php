@@ -70,7 +70,8 @@
                                     <?php the_date(); ?>
                                 </div>
                                 <div class="swtk-post-content">
-                                    <?php the_content(); ?>
+                                    <?php if (has_excerpt()) { the_excerpt(); } ?>
+                                    <?php echo wp_get_attachment_image( get_the_ID(), 'large' ); ?>
                                 </div>
                                 <?php if (has_category()): ?>
                                     <div class="swtk-post-categories">

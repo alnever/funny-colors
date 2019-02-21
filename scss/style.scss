@@ -13,7 +13,6 @@
 @import 'wp/nav';
 @import 'wp/widget';
 @import 'wp/form';
-@import 'wp/posts';
 @import 'wp/comments';
 
 // additional styling blocks
@@ -24,6 +23,7 @@
 @import 'blocks/404';
 
 // theme elements and re-styling
+@import 'theme/common';
 @import 'theme/layouts';
 @import 'theme/typography';
 @import 'theme/links';

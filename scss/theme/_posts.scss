@@ -14,8 +14,7 @@ article.swtk-post-index {
       font-family: $font-primary;
       font-size: $font-regular;
       color: $accent;
-      font-variant: small-caps;
-      font-variant-caps: small-caps;
+      text-transform: uppercase;
       font-stretch: expanded;
 
       margin-bottom: $padding / 2;
@@ -27,7 +26,7 @@ article.swtk-post-index {
 
       a {
           color: $primary;
-          font-variant: small-caps;
+          text-transform: uppercase;
 
           &:hover {
               text-decoration: none;
@@ -37,26 +36,225 @@ article.swtk-post-index {
   }
 
   @include post-author(flex, 4) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
       margin-bottom: $padding / 2;
+      font-family: $font-primary;
+      font-size: $font-regular;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
   }
 
   @include post-content(flex, 5) {
       margin-bottom: $padding / 2;
   }
 
-  @include post-categories(none, 6) {
+  @include post-categories(flex, 6) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
       margin-bottom: $padding / 2;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
+
+      ul.post-categories {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          margin: 0;
+          padding: 0;
+
+          list-style-type: none;
+
+          li {
+              font-family: $font-primary;
+              font-size: $font-code;
+              text-transform: uppercase;
+              padding-right: $padding;
+               a {
+                   text-decoration: none;
+                   color: $primary;
+
+                   &:hover {
+                       text-decoration: none;
+                       color: $accent;
+                   }
+               }
+
+               &:nth-child(n+4) {
+                   display: none;
+               }
+
+               &:nth-child(3) {
+                   a:after {
+                       content: "...";
+                   }
+               }
+          }
+      }
   }
 
-  @include post-tags(none, 7) {
+  @include post-tags(flex, 7) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
       margin-bottom: $padding / 2;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
+
+      a {
+          font-family: $font-primary;
+          font-size: $font-code;
+          text-transform: uppercase;
+          padding-right: $padding;
+          text-decoration: none;
+          color: $primary;
+
+          &:hover {
+              text-decoration: none;
+              color: $accent;
+          }
+
+          &:nth-child(n+5) {
+              display: none;
+          }
+
+          &:nth-child(4):after {
+              content: "...";
+          }
+      }
   }
 }
 
 article.swtk-post-single {
   @include col-12();
   @include simple-column-post();
-}
+
+  padding-top: 0;
+
+  @include post-image(block, 1) {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: $padding / 2;
+
+  }
+
+  @include post-date(flex, 2) {
+      font-family: $font-primary;
+      font-size: $font-regular;
+      color: $accent;
+      text-transform: uppercase;
+      font-stretch: expanded;
+
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-title(flex, 3) {
+      @extend .swtk-h1;
+      margin-bottom: $padding / 2;
+      width: 100%;
+      border-bottom: 1px solid $secondary;
+      color: $secondary;
+  }
+
+  @include post-author(flex, 4) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: $padding / 2;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
+  }
+
+  @include post-content(flex, 5) {
+      flex-direction: column;
+      margin-bottom: $padding / 2;
+  }
+
+  @include post-categories(flex, 6) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      margin-bottom: $padding / 2;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
+
+      ul.post-categories {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          margin: 0;
+          padding: 0;
+
+          list-style-type: none;
+
+          li {
+              font-family: $font-primary;
+              font-size: $font-code;
+              text-transform: uppercase;
+              padding-right: $padding;
+               a {
+                   text-decoration: none;
+                   color: $primary;
+
+                   &:hover {
+                       text-decoration: none;
+                       color: $accent;
+                   }
+               }
+          }
+
+      }
+  }
+
+  @include post-tags(flex, 7) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      margin-bottom: $padding / 2;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
+
+      a {
+          font-family: $font-primary;
+          font-size: $font-code;
+          text-transform: uppercase;
+          padding-right: $padding;
+          text-decoration: none;
+          color: $primary;
+
+          &:hover {
+              text-decoration: none;
+              color: $accent;
+          }
+      }
+  }
+} /*  .swtk-post-single */
 
 .sticky,
 article.swtk-post-sticky {
@@ -78,10 +276,7 @@ article.swtk-post-sticky {
       font-family: $font-primary;
       font-size: $font-regular;
       color: $accent;
-      font-variant: small-caps;
-      font-variant-caps: small-caps;
-      font-stretch: expanded;
-
+      text-transform: uppercase;
       margin-bottom: $padding / 2;
   }
 
@@ -91,7 +286,7 @@ article.swtk-post-sticky {
 
       a {
           color: $secondary;
-          font-variant: small-caps;
+          text-transform: uppercase;
 
           &:hover {
               text-decoration: none;
@@ -101,18 +296,104 @@ article.swtk-post-sticky {
   }
 
   @include post-author(flex, 3) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
       margin-bottom: $padding / 2;
+      font-family: $font-primary;
+      font-size: $font-regular;
+      .swtk-icon {
+          margin-right: $padding;
+      }
   }
 
   @include post-content(flex, 4) {
       margin-bottom: $padding / 2;
   }
 
-  @include post-categories(none, 5) {
+  @include post-categories(flex, 5) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
       margin-bottom: $padding / 2;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
+
+      ul.post-categories {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          margin: 0;
+          padding: 0;
+
+          list-style-type: none;
+
+          li {
+              font-family: $font-primary;
+              font-size: $font-code;
+              text-transform: uppercase;
+              padding-right: $padding;
+               a {
+                   text-decoration: none;
+                   color: $primary;
+
+                   &:hover {
+                       text-decoration: none;
+                       color: $accent;
+                   }
+               }
+
+               &:nth-child(n+4) {
+                   display: none;
+               }
+
+               &:nth-child(3) {
+                   a:after {
+                       content: "...";
+                   }
+               }
+          }
+      }
   }
 
-  @include post-tags(none, 6) {
+  @include post-tags(flex, 6) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
       margin-bottom: $padding / 2;
+
+      .swtk-icon {
+          margin-right: $padding;
+      }
+
+      a {
+          font-family: $font-primary;
+          font-size: $font-code;
+          text-transform: uppercase;
+          padding-right: $padding;
+          text-decoration: none;
+          color: $primary;
+
+          &:hover {
+              text-decoration: none;
+              color: $accent;
+          }
+
+          &:nth-child(n+5) {
+              display: none;
+          }
+
+          &:nth-child(4):after {
+              content: "...";
+          }
+      }
   }
 }

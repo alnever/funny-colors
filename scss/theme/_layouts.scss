@@ -43,7 +43,7 @@ footer, .swtk-footer {
 
   font-family: $font-primary;
   font-size: $font-code;
-  
+
   background-color: $secondary;
   color: $white;
 }
@@ -63,7 +63,6 @@ footer, .swtk-footer {
 .swtk-header-sidebar {
   @include column($content-width, $content-align);
   padding: $padding;
-  display: none;
 }
 
 .swtk-footer-sidebar {
