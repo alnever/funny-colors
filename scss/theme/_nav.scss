@@ -8,7 +8,14 @@ nav.swtk-navbar {
       }
   }
   .swtk-toggle {
-      @include badge-outline($font-primary, $font-small, $primary);
+      @include badge-outline($font-primary, $font-small, $white);
+
+      &:hover {
+          color: $white;
+          border: 1px solid $white;
+          font-weight: bold;
+          background-color: $accent;
+      }
   }
 
   li {

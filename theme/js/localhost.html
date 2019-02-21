@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost/blog/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="http://localhost/blog/#">
+    <title>Web Recipes – I make remarks here to not forget</title>
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Web Recipes » Feed" href="http://localhost/blog/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Web Recipes » Comments Feed" href="http://localhost/blog/index.php/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./localhost_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="dashicons-css" href="./localhost_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="./localhost_files/admin-bar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./localhost_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="swtk-style-css" href="./localhost_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="swtk-style-all-css" href="./localhost_files/style(1).css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="http://localhost/blog/index.php/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.0.3">
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+  </head>
+<body class="home blog logged-in admin-bar wp-custom-logo customize-support">
+
+
+  <div class="swtk-container">
+    <nav class="swtk-navbar">
+    <div class="swtk-brand-toggle">
+        <div class="swtk-brand">
+          <a href="http://localhost/blog"> Web Recipes </a>
+        </div>
+        <div class="swtk-toggle" swtk-id="Navbar0">≡</div>
+    </div>
+  <div class="swtk-collapsed" swtk-id="Navbar0" style="display: flex;">
+    <div class="swtk-nav">
+      <div class="menu-all-pages-container"><ul id="menu-all-pages" class="menu"><li id="menu-item-1636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1636"><a href="https://wpthemetestdata.wordpress.com/">Home</a></li>
+<li id="menu-item-1637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1637"><a href="http://localhost/blog/index.php/blog/">Blog</a></li>
+<li id="menu-item-1638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1638"><a href="http://localhost/blog/index.php/front-page/">Front Page</a></li>
+<li id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1639"><div class="swtk-super-item"><a href="http://localhost/blog/index.php/about/">About The Tests</a><a href="javascript:void(0)" class="swtk-submenu-button">▼</a></div>
+<ul class="sub-menu" style="display: none;">
+	<li id="menu-item-1697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1697"><a href="http://localhost/blog/index.php/about/page-image-alignment/">Page Image Alignment</a></li>
+	<li id="menu-item-1698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1698"><a href="http://localhost/blog/index.php/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
+	<li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"><a href="http://localhost/blog/index.php/about/clearing-floats/">Clearing Floats</a></li>
+	<li id="menu-item-1641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641"><a href="http://localhost/blog/index.php/about/page-with-comments/">Page with comments</a></li>
+	<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="http://localhost/blog/index.php/about/page-with-comments-disabled/">Page with comments disabled</a></li>
+</ul>
+</li>
+<li id="menu-item-1643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1643"><div class="swtk-super-item"><a href="http://localhost/blog/index.php/level-1/">Level 1</a><a href="javascript:void(0)" class="swtk-submenu-button">▼</a></div>
+<ul class="sub-menu" style="display: flex;">
+	<li id="menu-item-1644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1644"><div class="swtk-super-item"><a href="http://localhost/blog/index.php/level-1/level-2/">Level 2</a><a href="javascript:void(0)" class="swtk-submenu-button">▼</a></div>
+	<ul class="sub-menu">
+		<li id="menu-item-1645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1645"><a href="http://localhost/blog/index.php/level-1/level-2/level-3/">Level 3</a></li>
+		<li id="menu-item-1699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="http://localhost/blog/index.php/level-1/level-2/level-3a/">Level 3a</a></li>
+		<li id="menu-item-1700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1700"><a href="http://localhost/blog/index.php/level-1/level-2/level-3b/">Level 3b</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1701"><a href="http://localhost/blog/index.php/level-1/level-2a/">Level 2a</a></li>
+	<li id="menu-item-1702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1702"><a href="http://localhost/blog/index.php/level-1/level-2b/">Level 2b</a></li>
+</ul>
+</li>
+<li id="menu-item-1646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1646"><a href="http://localhost/blog/index.php/lorem-ipsum/">Lorem Ipsum</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="http://localhost/blog/index.php/page-a/">Page A</a></li>
+<li id="menu-item-1704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1704"><a href="http://localhost/blog/index.php/page-b/">Page B</a></li>
+</ul></div>    </div>
+    <div class="swtk-horizontal-sisebar swtk-menu-sidebar">
+          </div>
+  </div>
+</nav>
+    <div class="swtk-main">
+        <!-- header -->
+        <header class="swtk-header" style="background-image:url(  );">
+            <div class="swtk-header-logo">
+                <img src="./localhost_files/logo.png" alt="">            </div>
+            <div class="swtk-header-text-block">
+                <div class="swtk-header-title" style="color: #">
+                    Web Recipes                </div>
+                <div class="swtk-header-text">
+                    I make remarks here to not forget                </div>
+            </div>
+        </header>
+
+        <!-- header sidebar -->
+        <div class="swtk-horizontal-sidebar swtk-header-sidebar">
+                  </div>
+
+        <!-- content -->
+        <div class="swtk-content">
+            <!-- left sidebar -->
+            <div class="swtk-vertical-sidebar swtk-left-sidebar">
+                <div class="menu"><ul>
+<li class="page_item page-item-703"><a href="http://localhost/blog/index.php/blog/">Blog</a></li>
+<li class="page_item page-item-701"><a href="http://localhost/blog/index.php/front-page/">Front Page</a></li>
+<li class="page_item page-item-10 page_item_has_children"><div class="swtk-super-item"><a href="http://localhost/blog/index.php/about/">About The Tests</a><a href="javascript:void(0)" class="swtk-submenu-button">▼</a></div>
+<ul class="children">
+	<li class="page_item page-item-1133"><a href="http://localhost/blog/index.php/about/page-image-alignment/">Page Image Alignment</a></li>
+	<li class="page_item page-item-1134"><a href="http://localhost/blog/index.php/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
+	<li class="page_item page-item-501"><a href="http://localhost/blog/index.php/about/clearing-floats/">Clearing Floats</a></li>
+	<li class="page_item page-item-155"><a href="http://localhost/blog/index.php/about/page-with-comments/">Page with comments</a></li>
+	<li class="page_item page-item-156"><a href="http://localhost/blog/index.php/about/page-with-comments-disabled/">Page with comments disabled</a></li>
+</ul>
+</li>
+<li class="page_item page-item-174 page_item_has_children"><div class="swtk-super-item"><a href="http://localhost/blog/index.php/level-1/">Level 1</a><a href="javascript:void(0)" class="swtk-submenu-button">▼</a></div>
+<ul class="children">
+	<li class="page_item page-item-173 page_item_has_children"><div class="swtk-super-item"><a href="http://localhost/blog/index.php/level-1/level-2/">Level 2</a><a href="javascript:void(0)" class="swtk-submenu-button">▼</a></div>
+	<ul class="children">
+		<li class="page_item page-item-172"><a href="http://localhost/blog/index.php/level-1/level-2/level-3/">Level 3</a></li>
+		<li class="page_item page-item-746"><a href="http://localhost/blog/index.php/level-1/level-2/level-3a/">Level 3a</a></li>
+		<li class="page_item page-item-748"><a href="http://localhost/blog/index.php/level-1/level-2/level-3b/">Level 3b</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-742"><a href="http://localhost/blog/index.php/level-1/level-2a/">Level 2a</a></li>
+	<li class="page_item page-item-744"><a href="http://localhost/blog/index.php/level-1/level-2b/">Level 2b</a></li>
+</ul>
+</li>
+<li class="page_item page-item-146"><a href="http://localhost/blog/index.php/lorem-ipsum/">Lorem Ipsum</a></li>
+<li class="page_item page-item-733"><a href="http://localhost/blog/index.php/page-a/">Page A</a></li>
+<li class="page_item page-item-735"><a href="http://localhost/blog/index.php/page-b/">Page B</a></li>
+</ul></div>
+                            </div>
+
+            <!-- posts -->
+            <div class="swtk-posts">
+                <!-- sticky post -->
+                <div class="swtk-sticky-posts">
+                                            <article class="swtk-post-sticky" id="post-1241">
+                            <div class="swtk-post-image">
+                                                                    <img src="./localhost_files/pexels-photo-461077.jpeg" alt="">
+                                                            </div>
+                            <!-- post text -->
+                            <div class="swtk-post-text">
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2012/01/07/template-sticky/">
+                                        Template: Sticky                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    January 07, 2012                                </div>
+                                <div class="swtk-post-content">
+                                    <p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the […]</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/uncategorized/" rel="category tag">Uncategorized</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/sticky-2/" rel="tag">sticky</a><a href="http://localhost/blog/index.php/tag/template/" rel="tag">template</a>                                    </div>
+                                                            </div>
+                        </article>
+                                    </div>
+
+                <!-- main posts loop -->
+                                    <div class="swtk-row">
+
+                                                      <article class="swtk-post-index" id="post-1241">
+                                <div class="swtk-post-image">
+                                                                            <img src="./localhost_files/pexels-photo-461077.jpeg" alt="">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2012/01/07/template-sticky/">
+                                        Template: Sticky                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    January 07, 2012                                </div>
+                                <div class="swtk-post-content">
+                                    <p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the […]</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/uncategorized/" rel="category tag">Uncategorized</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/sticky-2/" rel="tag">sticky</a><a href="http://localhost/blog/index.php/tag/template/" rel="tag">template</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1737">
+                                <div class="swtk-post-image">
+                                                                            <img src="./localhost_files/100_5540.jpg" alt="">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2019/02/21/test-of-the-editor/">
+                                        Test of the editor                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    February 21, 2019                                </div>
+                                <div class="swtk-post-content">
+                                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla fermentum enim at nibh euismod pretium. Nullam gravida mi urna, ac blandit metus consectetur in. Header Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra nunc sapien, sed tempor nibh ornare vitae. Etiam non leo vel lorem molestie scelerisque ut quis tellus. Phasellus […]</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/template-2/" rel="category tag">Template</a></li>
+	<li><a href="http://localhost/blog/index.php/category/uncategorized/" rel="category tag">Uncategorized</a></li>
+	<li><a href="http://localhost/blog/index.php/category/weakhearted/" rel="category tag">weakhearted</a></li>
+	<li><a href="http://localhost/blog/index.php/category/wellintentioned/" rel="category tag">wellintentioned</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/template/" rel="tag">template</a><a href="http://localhost/blog/index.php/tag/text/" rel="tag">text</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1178">
+                                <div class="swtk-post-image">
+                                                                            <img src="./localhost_files/pexels-photo-270404.jpeg" alt="">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2013/01/11/markup-html-tags-and-formatting/">
+                                        Markup: HTML Tags and Formatting                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    January 11, 2013                                </div>
+                                <div class="swtk-post-content">
+                                    <p>Headings Header one Header two Header three Header four Header five Header six Blockquotes Single line blockquote: Stay hungry. Stay foolish. Multi line blockquote with a cite reference: The HTML &lt;blockquote&gt; Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes […]</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/markup/" rel="category tag">Markup</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/content-2/" rel="tag">content</a><a href="http://localhost/blog/index.php/tag/css/" rel="tag">css</a><a href="http://localhost/blog/index.php/tag/formatting-2/" rel="tag">formatting</a><a href="http://localhost/blog/index.php/tag/html/" rel="tag">html</a><a href="http://localhost/blog/index.php/tag/markup-2/" rel="tag">markup</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1177">
+                                <div class="swtk-post-image">
+                                                                            <img src="./localhost_files/soworthloving-wallpaper.jpg" alt="">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2013/01/10/markup-image-alignment/">
+                                        Markup: Image Alignment                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    January 10, 2013                                </div>
+                                <div class="swtk-post-content">
+                                    <p>Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let’s get started. On the topic of alignment, it should be noted that users can choose from the options of None, Left, […]</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/markup/" rel="category tag">Markup</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/alignment-2/" rel="tag">alignment</a><a href="http://localhost/blog/index.php/tag/captions-2/" rel="tag">captions</a><a href="http://localhost/blog/index.php/tag/content-2/" rel="tag">content</a><a href="http://localhost/blog/index.php/tag/css/" rel="tag">css</a><a href="http://localhost/blog/index.php/tag/image/" rel="tag">image</a><a href="http://localhost/blog/index.php/tag/markup-2/" rel="tag">markup</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1176">
+                                <div class="swtk-post-image">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2013/01/09/markup-text-alignment/">
+                                        Markup: Text Alignment                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    January 09, 2013                                </div>
+                                <div class="swtk-post-content">
+                                    <p>Default This is a paragraph. It should not have any alignment of any kind. It should just flow like you would normally expect. Nothing fancy. Just straight up text, free flowing, with love. Completely neutral and not picking a side or sitting on the fence. It just is. It just freaking is. It likes where […]</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/markup/" rel="category tag">Markup</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/alignment-2/" rel="tag">alignment</a><a href="http://localhost/blog/index.php/tag/content-2/" rel="tag">content</a><a href="http://localhost/blog/index.php/tag/css/" rel="tag">css</a><a href="http://localhost/blog/index.php/tag/markup-2/" rel="tag">markup</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1174">
+                                <div class="swtk-post-image">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2013/01/05/title-with-special-characters/">
+                                        Markup: Title With Special Characters ~`!@#$%^&amp;*()-_=+{}[]/\;:'"?,.&gt;                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    January 05, 2013                                </div>
+                                <div class="swtk-post-content">
+                                    <p>Putting special characters in the title should have no adverse effect on the layout or functionality. Special characters in the post title have been known to cause issues with JavaScript when it is minified, especially in the admin when editing the post itself (ie. issues with metaboxes, media upload, etc.). Latin Character Tests This is […]</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/markup/" rel="category tag">Markup</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/html/" rel="tag">html</a><a href="http://localhost/blog/index.php/tag/markup-2/" rel="tag">markup</a><a href="http://localhost/blog/index.php/tag/post/" rel="tag">post</a><a href="http://localhost/blog/index.php/tag/title/" rel="tag">title</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1173">
+                                <div class="swtk-post-image">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2013/01/05/markup-title-with-markup/">
+                                        Markup: Title &lt;em&gt;With&lt;/em&gt; &lt;b&gt;Markup&lt;/b&gt;                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    January 05, 2013                                </div>
+                                <div class="swtk-post-content">
+                                    <p>Verify that: The post title renders the word “with” in italics and the word “markup” in bold. The post title markup should be removed from the browser window / tab.</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/markup/" rel="category tag">Markup</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/css/" rel="tag">css</a><a href="http://localhost/blog/index.php/tag/html/" rel="tag">html</a><a href="http://localhost/blog/index.php/tag/title/" rel="tag">title</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1016">
+                                <div class="swtk-post-image">
+                                                                            <img src="./localhost_files/featured-image-vertical.jpg" alt="">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2012/03/15/template-featured-image-vertical/">
+                                        Template: Featured Image (Vertical)                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    March 15, 2012                                </div>
+                                <div class="swtk-post-content">
+                                    <p>This post should display a featured image, if the theme supports it. Non-square images can provide some unique styling issues. This post tests a vertical featured image.</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/template-2/" rel="category tag">Template</a></li>
+	<li><a href="http://localhost/blog/index.php/category/uncategorized/" rel="category tag">Uncategorized</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/codex/" rel="tag">Codex</a><a href="http://localhost/blog/index.php/tag/edge-case/" rel="tag">edge case</a><a href="http://localhost/blog/index.php/tag/featured-image/" rel="tag">featured image</a><a href="http://localhost/blog/index.php/tag/image/" rel="tag">image</a><a href="http://localhost/blog/index.php/tag/template/" rel="tag">template</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-1011">
+                                <div class="swtk-post-image">
+                                                                            <img src="./localhost_files/featured-image-horizontal.jpg" alt="">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2012/03/15/template-featured-image-horizontal/">
+                                        Template: Featured Image (Horizontal)                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    March 15, 2012                                </div>
+                                <div class="swtk-post-content">
+                                    <p>This post should display a featured image, if the theme supports it. Non-square images can provide some unique styling issues. This post tests a horizontal featured image.</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/template-2/" rel="category tag">Template</a></li>
+	<li><a href="http://localhost/blog/index.php/category/uncategorized/" rel="category tag">Uncategorized</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/codex/" rel="tag">Codex</a><a href="http://localhost/blog/index.php/tag/edge-case/" rel="tag">edge case</a><a href="http://localhost/blog/index.php/tag/featured-image/" rel="tag">featured image</a><a href="http://localhost/blog/index.php/tag/image/" rel="tag">image</a><a href="http://localhost/blog/index.php/tag/template/" rel="tag">template</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-996">
+                                <div class="swtk-post-image">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2012/03/15/template-more-tag/">
+                                        Template: More Tag                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    March 15, 2012                                </div>
+                                <div class="swtk-post-content">
+                                    <p>This content is before the more tag. Right after this sentence should be a “continue reading” button of some sort.</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/template-2/" rel="category tag">Template</a></li>
+	<li><a href="http://localhost/blog/index.php/category/uncategorized/" rel="category tag">Uncategorized</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/content-2/" rel="tag">content</a><a href="http://localhost/blog/index.php/tag/read-more/" rel="tag">read more</a><a href="http://localhost/blog/index.php/tag/template/" rel="tag">template</a>                                    </div>
+                                                            </article>
+                                                      <article class="swtk-post-index" id="post-993">
+                                <div class="swtk-post-image">
+                                                                    </div>
+                                <!-- post header -->
+                                <div class="swtk-post-title">
+                                    <a href="http://localhost/blog/index.php/2012/03/15/template-excerpt-defined/">
+                                        Template: Excerpt (Defined)                                    </a>
+                                </div>
+                                <!-- post before main text -->
+                                <div class="swtk-post-author">
+                                    <img class="swtk-icon" src="./localhost_files/edit.svg">
+                                    <a href="https://alneverov.ru/" title="Visit Alex Neverov’s website" rel="author external">Alex Neverov</a>                                </div>
+                                <div class="swtk-post-date">
+                                    March 15, 2012                                </div>
+                                <div class="swtk-post-content">
+                                    <p>This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages.</p>
+                                </div>
+                                                                    <div class="swtk-post-categories">
+                                        <img src="./localhost_files/folder.svg" class="swtk-icon">
+                                        <ul class="post-categories">
+	<li><a href="http://localhost/blog/index.php/category/template-2/" rel="category tag">Template</a></li>
+	<li><a href="http://localhost/blog/index.php/category/uncategorized/" rel="category tag">Uncategorized</a></li></ul>                                    </div>
+                                                                                                    <div class="swtk-post-tags">
+                                        <img src="./localhost_files/price-tag.svg" class="swtk-icon">
+                                        <a href="http://localhost/blog/index.php/tag/content-2/" rel="tag">content</a><a href="http://localhost/blog/index.php/tag/excerpt-2/" rel="tag">excerpt</a><a href="http://localhost/blog/index.php/tag/template/" rel="tag">template</a>                                    </div>
+                                                            </article>
+                                              </div>
+                    <div class="swtk-pagination">
+                        
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="http://localhost/blog/index.php/page/2/">2</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="http://localhost/blog/index.php/page/4/">4</a>
+<a class="next page-numbers" href="http://localhost/blog/index.php/page/2/">Next</a></div>
+	</nav>                    </div>
+                            </div>
+            <!-- posts -->
+
+            <!-- right sidebar -->
+            <div class="swtk-vertical-sidebar swtk-right-sidebar">
+                <li id="search-5" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://localhost/blog/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></li>
+            </div>
+        </div>
+
+
+
+  <!-- footer sidebar -->
+<div class="swtk-horizontal-sidebar swtk-footer-sidebar">
+    <div class="swtk-vertical-sidebar">
+        <li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href="http://localhost/blog/index.php/2019/02/">February 2019</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2013/01/">January 2013</a>&nbsp;<span class="swtk-widget-archive-count">5</span></li>
+	<li><a href="http://localhost/blog/index.php/2012/03/">March 2012</a>&nbsp;<span class="swtk-widget-archive-count">5</span></li>
+	<li><a href="http://localhost/blog/index.php/2012/01/">January 2012</a>&nbsp;<span class="swtk-widget-archive-count">6</span></li>
+	<li><a href="http://localhost/blog/index.php/2011/03/">March 2011</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/10/">October 2010</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/09/">September 2010</a>&nbsp;<span class="swtk-widget-archive-count">2</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/08/">August 2010</a>&nbsp;<span class="swtk-widget-archive-count">3</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/07/">July 2010</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/06/">June 2010</a>&nbsp;<span class="swtk-widget-archive-count">2</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/05/">May 2010</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/04/">April 2010</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/03/">March 2010</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/02/">February 2010</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2010/01/">January 2010</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2009/10/">October 2009</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2009/09/">September 2009</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2009/08/">August 2009</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2009/07/">July 2009</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2009/06/">June 2009</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+	<li><a href="http://localhost/blog/index.php/2009/05/">May 2009</a>&nbsp;<span class="swtk-widget-archive-count">1</span></li>
+		</ul>
+		</li>
+    </div>
+    <div class="swtk-vertical-sidebar">
+        <li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+	<li class="cat-item cat-item-2 swtk-super-category"><div class="swtk-super-category-title"><a href="http://localhost/blog/index.php/category/aciform/">aciform</a><span class="swtk-widget-category-count">1</span></div> 
+<ul class="children">
+	<li class="cat-item cat-item-46"><a href="http://localhost/blog/index.php/category/aciform/sub/">sub</a> <span class="swtk-widget-category-count">1</span>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://localhost/blog/index.php/category/antiquarianism/">antiquarianism</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://localhost/blog/index.php/category/arrangement/">arrangement</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://localhost/blog/index.php/category/asmodeus/">asmodeus</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://localhost/blog/index.php/category/broder/">broder</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://localhost/blog/index.php/category/buying/">buying</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://localhost/blog/index.php/category/cat-a/">Cat A</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://localhost/blog/index.php/category/cat-b/">Cat B</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://localhost/blog/index.php/category/cat-c/">Cat C</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://localhost/blog/index.php/category/championship/">championship</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://localhost/blog/index.php/category/chastening/">chastening</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://localhost/blog/index.php/category/clerkship/">clerkship</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://localhost/blog/index.php/category/disinclination/">disinclination</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://localhost/blog/index.php/category/disinfection/">disinfection</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://localhost/blog/index.php/category/dispatch/">dispatch</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://localhost/blog/index.php/category/echappee/">echappee</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://localhost/blog/index.php/category/edge-case-2/" title="Posts that have edge-case related tests">Edge Case</a> <span class="swtk-widget-category-count">6</span>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://localhost/blog/index.php/category/enphagy/">enphagy</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://localhost/blog/index.php/category/equipollent/">equipollent</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://localhost/blog/index.php/category/fatuity/">fatuity</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://localhost/blog/index.php/category/foo-a/">Foo A</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-24 swtk-super-category"><div class="swtk-super-category-title"><a href="http://localhost/blog/index.php/category/foo-parent/">Foo Parent</a><span class="swtk-widget-category-count">1</span></div> 
+<ul class="children">
+	<li class="cat-item cat-item-64"><a href="http://localhost/blog/index.php/category/foo-parent/foo-a-foo-parent/">Foo A</a> <span class="swtk-widget-category-count">1</span>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-25"><a href="http://localhost/blog/index.php/category/gaberlunzie/">gaberlunzie</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://localhost/blog/index.php/category/illtempered/">illtempered</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-27"><a href="http://localhost/blog/index.php/category/insubordination/">insubordination</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://localhost/blog/index.php/category/lender/">lender</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://localhost/blog/index.php/category/markup/" title="Posts in this category test markup tags and styles.">Markup</a> <span class="swtk-widget-category-count">6</span>
+</li>
+	<li class="cat-item cat-item-30"><a href="http://localhost/blog/index.php/category/media-2/" title="Posts that have media-related tests">Media</a> <span class="swtk-widget-category-count">2</span>
+</li>
+	<li class="cat-item cat-item-31"><a href="http://localhost/blog/index.php/category/monosyllable/">monosyllable</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-32"><a href="http://localhost/blog/index.php/category/packthread/">packthread</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-33"><a href="http://localhost/blog/index.php/category/palter/">palter</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://localhost/blog/index.php/category/papilionaceous/">papilionaceous</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-35 swtk-super-category"><div class="swtk-super-category-title"><a href="http://localhost/blog/index.php/category/parent/">Parent</a><span class="swtk-widget-category-count">1</span></div> 
+<ul class="children">
+	<li class="cat-item cat-item-57 swtk-super-category"><div class="swtk-super-category-title"><a href="http://localhost/blog/index.php/category/parent/child-1/">Child 1</a><span class="swtk-widget-category-count">1</span></div> 
+	<ul class="children">
+	<li class="cat-item cat-item-58"><a href="http://localhost/blog/index.php/category/parent/child-1/child-2/">Child 2</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-36 swtk-super-category"><div class="swtk-super-category-title"><a href="http://localhost/blog/index.php/category/parent-category/" title="This is a parent category. It will contain child categories">Parent Category</a><span class="swtk-widget-category-count">1</span></div> 
+<ul class="children">
+	<li class="cat-item cat-item-59"><a href="http://localhost/blog/index.php/category/parent-category/child-category-01/" title="This is a description for the Child Category 01.">Child Category 01</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-60"><a href="http://localhost/blog/index.php/category/parent-category/child-category-02/" title="This is a description for the Child Category 02.">Child Category 02</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-61 swtk-super-category"><div class="swtk-super-category-title"><a href="http://localhost/blog/index.php/category/parent-category/child-category-03/" title="This is a description for the Child Category 03.">Child Category 03</a><span class="swtk-widget-category-count">1</span></div> 
+	<ul class="children">
+	<li class="cat-item cat-item-65"><a href="http://localhost/blog/index.php/category/parent-category/child-category-03/grandchild-category/" title="This is a description for the Grandchild Category.">Grandchild Category</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-62"><a href="http://localhost/blog/index.php/category/parent-category/child-category-04/" title="This is a description for the Child Category 04.">Child Category 04</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-63"><a href="http://localhost/blog/index.php/category/parent-category/child-category-05/" title="This is a description for the Child Category 05.">Child Category 05</a> <span class="swtk-widget-category-count">1</span>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://localhost/blog/index.php/category/personable/">personable</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-38"><a href="http://localhost/blog/index.php/category/post-formats/" title="Posts in this category test post formats.">Post Formats</a> <span class="swtk-widget-category-count">15</span>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://localhost/blog/index.php/category/propylaeum/">propylaeum</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-40"><a href="http://localhost/blog/index.php/category/pustule/">pustule</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-41"><a href="http://localhost/blog/index.php/category/quartern/">quartern</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-42"><a href="http://localhost/blog/index.php/category/scholarship/">scholarship</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-43"><a href="http://localhost/blog/index.php/category/selfconvicted/">selfconvicted</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-44"><a href="http://localhost/blog/index.php/category/showshoe/">showshoe</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-45"><a href="http://localhost/blog/index.php/category/sloyd/">sloyd</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-47"><a href="http://localhost/blog/index.php/category/sublunary/">sublunary</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-48"><a href="http://localhost/blog/index.php/category/tamtam/">tamtam</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-49"><a href="http://localhost/blog/index.php/category/template-2/" title="Posts with template-related tests">Template</a> <span class="swtk-widget-category-count">11</span>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://localhost/blog/index.php/category/uncategorized/">Uncategorized</a> <span class="swtk-widget-category-count">12</span>
+</li>
+	<li class="cat-item cat-item-50"><a href="http://localhost/blog/index.php/category/unpublished/" title="Posts in this category test unpublished posts.">Unpublished</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-51"><a href="http://localhost/blog/index.php/category/weakhearted/">weakhearted</a> <span class="swtk-widget-category-count">2</span>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://localhost/blog/index.php/category/ween/">ween</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-53"><a href="http://localhost/blog/index.php/category/wellhead/">wellhead</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-54"><a href="http://localhost/blog/index.php/category/wellintentioned/">wellintentioned</a> <span class="swtk-widget-category-count">2</span>
+</li>
+	<li class="cat-item cat-item-55"><a href="http://localhost/blog/index.php/category/whetstone/">whetstone</a> <span class="swtk-widget-category-count">1</span>
+</li>
+	<li class="cat-item cat-item-56"><a href="http://localhost/blog/index.php/category/years/">years</a> <span class="swtk-widget-category-count">1</span>
+</li>
+		</ul>
+</li>
+    </div>
+    <div class="swtk-vertical-sidebar">
+        <li id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widgettitle">Tags</h2>
+<div class="tagcloud"><a href="http://localhost/blog/index.php/tag/8bit/" class="tag-cloud-link tag-link-66 tag-link-position-1" style="font-size: 8pt;" aria-label="8BIT (1 item)">8BIT<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/alignment-2/" class="tag-cloud-link tag-link-67 tag-link-position-2" style="font-size: 12.666666666667pt;" aria-label="alignment (3 items)">alignment<span class="tag-link-count"> 3</span></a>
+<a href="http://localhost/blog/index.php/tag/articles/" class="tag-cloud-link tag-link-68 tag-link-position-3" style="font-size: 8pt;" aria-label="Articles (1 item)">Articles<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/aside/" class="tag-cloud-link tag-link-69 tag-link-position-4" style="font-size: 8pt;" aria-label="aside (1 item)">aside<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/audio/" class="tag-cloud-link tag-link-70 tag-link-position-5" style="font-size: 8pt;" aria-label="audio (1 item)">audio<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/captions-2/" class="tag-cloud-link tag-link-71 tag-link-position-6" style="font-size: 10.8pt;" aria-label="captions (2 items)">captions<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/categories/" class="tag-cloud-link tag-link-72 tag-link-position-7" style="font-size: 10.8pt;" aria-label="categories (2 items)">categories<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/chat/" class="tag-cloud-link tag-link-73 tag-link-position-8" style="font-size: 10.8pt;" aria-label="chat (2 items)">chat<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/codex/" class="tag-cloud-link tag-link-77 tag-link-position-9" style="font-size: 12.666666666667pt;" aria-label="Codex (3 items)">Codex<span class="tag-link-count"> 3</span></a>
+<a href="http://localhost/blog/index.php/tag/comments-2/" class="tag-cloud-link tag-link-78 tag-link-position-10" style="font-size: 14.222222222222pt;" aria-label="comments (4 items)">comments<span class="tag-link-count"> 4</span></a>
+<a href="http://localhost/blog/index.php/tag/content-2/" class="tag-cloud-link tag-link-79 tag-link-position-11" style="font-size: 20.6pt;" aria-label="content (12 items)">content<span class="tag-link-count"> 12</span></a>
+<a href="http://localhost/blog/index.php/tag/css/" class="tag-cloud-link tag-link-81 tag-link-position-12" style="font-size: 17.333333333333pt;" aria-label="css (7 items)">css<span class="tag-link-count"> 7</span></a>
+<a href="http://localhost/blog/index.php/tag/dowork/" class="tag-cloud-link tag-link-85 tag-link-position-13" style="font-size: 8pt;" aria-label="dowork (1 item)">dowork<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/edge-case/" class="tag-cloud-link tag-link-86 tag-link-position-14" style="font-size: 18.111111111111pt;" aria-label="edge case (8 items)">edge case<span class="tag-link-count"> 8</span></a>
+<a href="http://localhost/blog/index.php/tag/embeds-2/" class="tag-cloud-link tag-link-87 tag-link-position-15" style="font-size: 12.666666666667pt;" aria-label="embeds (3 items)">embeds<span class="tag-link-count"> 3</span></a>
+<a href="http://localhost/blog/index.php/tag/excerpt-2/" class="tag-cloud-link tag-link-91 tag-link-position-16" style="font-size: 12.666666666667pt;" aria-label="excerpt (3 items)">excerpt<span class="tag-link-count"> 3</span></a>
+<a href="http://localhost/blog/index.php/tag/fail/" class="tag-cloud-link tag-link-92 tag-link-position-17" style="font-size: 8pt;" aria-label="Fail (1 item)">Fail<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/featured-image/" class="tag-cloud-link tag-link-93 tag-link-position-18" style="font-size: 12.666666666667pt;" aria-label="featured image (3 items)">featured image<span class="tag-link-count"> 3</span></a>
+<a href="http://localhost/blog/index.php/tag/formatting-2/" class="tag-cloud-link tag-link-96 tag-link-position-19" style="font-size: 8pt;" aria-label="formatting (1 item)">formatting<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/ftw/" class="tag-cloud-link tag-link-97 tag-link-position-20" style="font-size: 8pt;" aria-label="FTW (1 item)">FTW<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/fun/" class="tag-cloud-link tag-link-98 tag-link-position-21" style="font-size: 8pt;" aria-label="Fun (1 item)">Fun<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/gallery/" class="tag-cloud-link tag-link-99 tag-link-position-22" style="font-size: 12.666666666667pt;" aria-label="gallery (3 items)">gallery<span class="tag-link-count"> 3</span></a>
+<a href="http://localhost/blog/index.php/tag/html/" class="tag-cloud-link tag-link-105 tag-link-position-23" style="font-size: 15.466666666667pt;" aria-label="html (5 items)">html<span class="tag-link-count"> 5</span></a>
+<a href="http://localhost/blog/index.php/tag/image/" class="tag-cloud-link tag-link-106 tag-link-position-24" style="font-size: 17.333333333333pt;" aria-label="image (7 items)">image<span class="tag-link-count"> 7</span></a>
+<a href="http://localhost/blog/index.php/tag/jetpack-2/" class="tag-cloud-link tag-link-109 tag-link-position-25" style="font-size: 10.8pt;" aria-label="jetpack (2 items)">jetpack<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/layout/" class="tag-cloud-link tag-link-111 tag-link-position-26" style="font-size: 14.222222222222pt;" aria-label="layout (4 items)">layout<span class="tag-link-count"> 4</span></a>
+<a href="http://localhost/blog/index.php/tag/link/" class="tag-cloud-link tag-link-112 tag-link-position-27" style="font-size: 10.8pt;" aria-label="link (2 items)">link<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/lists-2/" class="tag-cloud-link tag-link-113 tag-link-position-28" style="font-size: 8pt;" aria-label="lists (1 item)">lists<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/love/" class="tag-cloud-link tag-link-115 tag-link-position-29" style="font-size: 8pt;" aria-label="Love (1 item)">Love<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/markup-2/" class="tag-cloud-link tag-link-116 tag-link-position-30" style="font-size: 16.555555555556pt;" aria-label="markup (6 items)">markup<span class="tag-link-count"> 6</span></a>
+<a href="http://localhost/blog/index.php/tag/media/" class="tag-cloud-link tag-link-117 tag-link-position-31" style="font-size: 8pt;" aria-label="media (1 item)">media<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/mothership/" class="tag-cloud-link tag-link-122 tag-link-position-32" style="font-size: 8pt;" aria-label="Mothership (1 item)">Mothership<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/mustread/" class="tag-cloud-link tag-link-123 tag-link-position-33" style="font-size: 8pt;" aria-label="Must Read (1 item)">Must Read<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/nailedit/" class="tag-cloud-link tag-link-124 tag-link-position-34" style="font-size: 8pt;" aria-label="Nailed It (1 item)">Nailed It<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/pagination/" class="tag-cloud-link tag-link-126 tag-link-position-35" style="font-size: 8pt;" aria-label="pagination (1 item)">pagination<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/password-2/" class="tag-cloud-link tag-link-128 tag-link-position-36" style="font-size: 8pt;" aria-label="password (1 item)">password<span class="tag-link-count"> 1</span></a>
+<a href="http://localhost/blog/index.php/tag/post-formats/" class="tag-cloud-link tag-link-134 tag-link-position-37" style="font-size: 22pt;" aria-label="Post Formats (15 items)">Post Formats<span class="tag-link-count"> 15</span></a>
+<a href="http://localhost/blog/index.php/tag/quote/" class="tag-cloud-link tag-link-140 tag-link-position-38" style="font-size: 10.8pt;" aria-label="quote (2 items)">quote<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/shortcode/" class="tag-cloud-link tag-link-146 tag-link-position-39" style="font-size: 15.466666666667pt;" aria-label="shortcode (5 items)">shortcode<span class="tag-link-count"> 5</span></a>
+<a href="http://localhost/blog/index.php/tag/standard-2/" class="tag-cloud-link tag-link-148 tag-link-position-40" style="font-size: 10.8pt;" aria-label="standard (2 items)">standard<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/template/" class="tag-cloud-link tag-link-160 tag-link-position-41" style="font-size: 21.222222222222pt;" aria-label="template (13 items)">template<span class="tag-link-count"> 13</span></a>
+<a href="http://localhost/blog/index.php/tag/title/" class="tag-cloud-link tag-link-165 tag-link-position-42" style="font-size: 15.466666666667pt;" aria-label="title (5 items)">title<span class="tag-link-count"> 5</span></a>
+<a href="http://localhost/blog/index.php/tag/twitter-2/" class="tag-cloud-link tag-link-167 tag-link-position-43" style="font-size: 10.8pt;" aria-label="twitter (2 items)">twitter<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/video/" class="tag-cloud-link tag-link-170 tag-link-position-44" style="font-size: 10.8pt;" aria-label="video (2 items)">video<span class="tag-link-count"> 2</span></a>
+<a href="http://localhost/blog/index.php/tag/wordpress-tv/" class="tag-cloud-link tag-link-174 tag-link-position-45" style="font-size: 10.8pt;" aria-label="wordpress.tv (2 items)">wordpress.tv<span class="tag-link-count"> 2</span></a></div>
+</li>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="swtk-footer">
+  <div class="swtk-footer-content">
+      <div class="swtk-footer_text">
+              </div>
+      <div class="swtk-footer_links">
+          <a href="http://localhost/blog/">
+              <img src="http://localhost/blog/">
+          </a>
+          <a href="http://localhost/blog/">
+              <img src="http://localhost/blog/">
+          </a>
+          <a href="http://localhost/blog/">
+              <img src="http://localhost/blog/">
+          </a>
+      </div>
+  </div>
+  <div class="swtk-footer-creditial">
+      SASS Wordpress Theming Kit, © Alex Neverov, 2019. All rights reserved
+  </div>
+</footer>
+
+</div>
+</div>
+<script type="text/javascript" src="./localhost_files/admin-bar.min.js"></script>
+<script type="text/javascript" src="./localhost_files/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="./localhost_files/index.js"></script>
+<script type="text/javascript" src="./localhost_files/wp-embed.min.js"></script>
+	<!--[if lte IE 8]>
+		<script type="text/javascript">
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
+		</script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+		<script type="text/javascript">
+			(function() {
+				var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, ' ' );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+			}());
+		</script>
+	<!--<![endif]-->
+			
+
+		
+
+<div id="wpadminbar" class="nojq  mobile">
+							<a class="screen-reader-shortcut" href="http://localhost/blog/#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/blog/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item" href="http://localhost/blog/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/blog/wp-admin/">Web Recipes</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard"><a class="ab-item" href="http://localhost/blog/wp-admin/">Dashboard</a>		</li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
+		<li id="wp-admin-bar-themes"><a class="ab-item" href="http://localhost/blog/wp-admin/themes.php">Themes</a>		</li>
+		<li id="wp-admin-bar-widgets"><a class="ab-item" href="http://localhost/blog/wp-admin/widgets.php">Widgets</a>		</li>
+		<li id="wp-admin-bar-menus"><a class="ab-item" href="http://localhost/blog/wp-admin/nav-menus.php">Menus</a>		</li>
+		<li id="wp-admin-bar-background" class="hide-if-customize"><a class="ab-item" href="http://localhost/blog/wp-admin/themes.php?page=custom-background">Background</a>		</li>
+		<li id="wp-admin-bar-header" class="hide-if-customize"><a class="ab-item" href="http://localhost/blog/wp-admin/themes.php?page=custom-header">Header</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item" href="http://localhost/blog/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%2Fblog%2F">Customize</a>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item" href="http://localhost/blog/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-3" aria-hidden="true">3</span><span class="screen-reader-text">3 comments awaiting moderation</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/blog/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item" href="http://localhost/blog/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item" href="http://localhost/blog/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item" href="http://localhost/blog/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item" href="http://localhost/blog/wp-admin/user-new.php">User</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://localhost/blog/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://localhost/blog/wp-admin/profile.php">Howdy, <span class="display-name">Alex Neverov</span><img alt="" src="./localhost_files/32cc9e3d1cadeadd5762af0fd94f6b3d.png" srcset="http://0.gravatar.com/avatar/32cc9e3d1cadeadd5762af0fd94f6b3d?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://localhost/blog/wp-admin/profile.php"><img alt="" src="./localhost_files/32cc9e3d1cadeadd5762af0fd94f6b3d(1).png" srcset="http://0.gravatar.com/avatar/32cc9e3d1cadeadd5762af0fd94f6b3d?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">Alex Neverov</span><span class="username">alex</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://localhost/blog/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item" href="http://localhost/blog/wp-login.php?action=logout&amp;_wpnonce=76881ec65d">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://localhost/blog/wp-login.php?action=logout&amp;_wpnonce=76881ec65d">Log Out</a>
+					</div></body></html>

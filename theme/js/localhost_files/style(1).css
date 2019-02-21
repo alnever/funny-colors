@@ -578,11 +578,7 @@ nav.swtk-navbar {
         flex-direction: row;
         justify-content: space-between; } }
     nav.swtk-navbar > .swtk-collapsed > div.swtk-nav {
-      width: 100%;
       /* div.menu */ }
-      @media only screen and (min-width: 768px) {
-        nav.swtk-navbar > .swtk-collapsed > div.swtk-nav {
-          width: auto; } }
       nav.swtk-navbar > .swtk-collapsed > div.swtk-nav > div {
         /* item list*/
         /* ul */ }
@@ -683,21 +679,16 @@ nav.swtk-navbar {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #4abdac;
+    border: 1px solid #4abdac;
     border-radius: 0; }
     nav.swtk-navbar .swtk-toggle:hover {
       text-decoration: none;
       color: #ffffff;
-      background-color: #ffffff;
-      border: 1px solid #ffffff;
+      background-color: #4abdac;
+      border: 1px solid #4abdac;
       border-radius: 0;
       cursor: pointer; }
-    nav.swtk-navbar .swtk-toggle:hover {
-      color: #ffffff;
-      border: 1px solid #ffffff;
-      font-weight: bold;
-      background-color: #f76733; }
   nav.swtk-navbar li:hover {
     background-color: #f76733;
     font-weight: bold; }

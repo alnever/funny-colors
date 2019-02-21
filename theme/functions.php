@@ -35,7 +35,7 @@ function funny_colors_setup() {
 
 	// editor style
 
-	add_editor_style(get_template_directory_uri() . './css/style.css');
+	add_editor_style(get_theme_file_uri('/css/style.css'));
 }
 
 add_action('after_setup_theme', 'funny_colors_setup');

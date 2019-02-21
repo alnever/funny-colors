@@ -71,6 +71,11 @@
 
     /* navbar inside collapsed */
     & > div.swtk-nav {
+        width: 100%;
+
+        @include media-break-up($medium) {
+            width: auto;
+        }
       & > div {
         /* item list*/
         & > ul {

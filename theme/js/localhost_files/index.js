@@ -79,7 +79,10 @@
         // perfom toggle click action
         $('.swtk-toggle').each(function() {
             $(this).on('click', function() {
+
+                console.log($(this).attr('swtk-id'));
                 var collapsed = $('[swtk-id=' + $(this).attr('swtk-id') + '].swtk-collapsed');
+                console.log(collapsed);
                 if (collapsed.css('display') == 'none') {
                     collapsed.css('display','flex');
                 } else {

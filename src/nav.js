@@ -11,12 +11,14 @@ $(function() {
         $(this).children('.swtk-brand-toggle').first()
             .children('.swtk-toggle').first().attr("swtk-id","Navbar" + navbarCounter);
         $(this).children('.swtk-collapsed').first().attr("swtk-id","Navbar" + navbarCounter);
+
+        navbarCounter++;
     });
 
     // perfom toggle click action
     $('.swtk-toggle').each(function() {
         $(this).on('click', function() {
-            var collapsed = $('#' + $(this).attr('id') + '.swtk-collapsed');
+            var collapsed = $('[swtk-id=' + $(this).attr('swtk-id') + '].swtk-collapsed');
             if (collapsed.css('display') == 'none') {
                 collapsed.css('display','flex');
             } else {

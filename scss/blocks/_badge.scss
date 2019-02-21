@@ -39,6 +39,7 @@
 
     border: 1px solid $color;
     border-radius: $border-radius;
+    
 }
 
 @mixin badge($font-family: $font-primary, $font-size: $font-code, $color: $accent) {
