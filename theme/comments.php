@@ -23,6 +23,7 @@
         <!-- comments pagination -->
         <?php if (get_comment_pages_count() && get_option('page_comments')): ?>
             <div class="swtk-comments-pagination">
+                <img src="<?php echo get_theme_file_uri('/icons/copy.svg'); ?>" alt="" class="swtk-icon">
                 <?php paginate_comments_links(); ?>
             </div>
         <?php endif; ?>

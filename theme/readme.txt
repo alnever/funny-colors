@@ -21,6 +21,8 @@ An answer to that question.
 
 == Changelog ==
 
+= 0.6 =
+
 = 0.5 =
 * Templates were modified: index.php, singular.php, attachment.php
 * Standard WordPress widgets are supported: archives, categories, tag cloud, navigation, gallery etc.

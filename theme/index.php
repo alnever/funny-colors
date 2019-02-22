@@ -141,21 +141,22 @@
                                 </div>
                                 <?php if (has_category()): ?>
                                     <div class="swtk-post-categories">
-                                        <img src="<?php echo get_theme_file_uri('/icons/folder.svg') ?>" class="swtk-icon">
+                                        <img src="<?php echo get_theme_file_uri('/icons/folder.svg'); ?>" class="swtk-icon">
                                         <?php the_category(); ?>
                                     </div>
                                 <?php endif; ?>
                                 <?php if (has_tag()): ?>
                                     <div class="swtk-post-tags">
-                                        <img src="<?php echo get_theme_file_uri('/icons/price-tag.svg') ?>" class="swtk-icon">
+                                        <img src="<?php echo get_theme_file_uri('/icons/price-tag.svg'); ?>" class="swtk-icon">
                                         <?php the_tags('','',''); ?>
                                     </div>
                                 <?php endif; ?>
                             </article>
                           <?php endwhile; ?>
-                    </div>
-                    <div class="swtk-pagination">
-                        <?php the_posts_pagination(); ?>
+                          <div class="swtk-pagination">
+                              <img src="<?php echo get_theme_file_uri('/icons/copy.svg'); ?>" alt="" class="swtk-icon">
+                              <?php the_posts_pagination(); ?>
+                          </div>
                     </div>
                 <?php endif; ?>
             </div>
