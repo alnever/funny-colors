@@ -1,3 +1,14 @@
+<?php
+/**
+* The template for displaying attachement page
+*
+* The page displays specific post type - an attachement
+*
+* @package SWTK
+* @subpackage Funny_Colors
+* @since Funny Colors 1.0
+*/
+ ?>
 <?php get_header(); ?>
 
 

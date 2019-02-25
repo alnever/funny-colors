@@ -1,3 +1,14 @@
+<?php
+/**
+ * Index the Funny Colors Theme
+ *
+ * The file contains the definitions of the main loop of the theme
+ *
+ * @package SWTK
+ * @subpackage Funny_Colors
+ * @since Funny Colors 1.0
+ */
+ ?>
 <?php get_header(); ?>
 
 

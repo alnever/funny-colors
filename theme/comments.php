@@ -1,5 +1,14 @@
-<!-- comments -->
 <?php
+/**
+ * The template for comments
+ *
+ * The template shown the thread of commments and a comment form
+ *
+ * @package SWTK
+ * @subpackage Funny_Colors
+ * @since Funny Colors 1.0
+ */
+ 
     if ( post_password_required() ) {
     	return;
     }

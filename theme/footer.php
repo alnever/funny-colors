@@ -1,4 +1,14 @@
-<!-- footer sidebar -->
+<?php
+/**
+* The footer template part
+*
+* This content is shown in the footer of every page
+*
+* @package SWTK
+* @subpackage Funny_Colors
+* @since Funny Colors 1.0
+*/
+ ?>
 <div class="swtk-horizontal-sidebar swtk-footer-sidebar">
     <div class="swtk-vertical-sidebar">
         <?php dynamic_sidebar('footer-left-sidebar'); ?>

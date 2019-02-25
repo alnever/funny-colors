@@ -1,3 +1,14 @@
+<?php
+/**
+* The template for displaying 404 page
+*
+* The pages is shown when the requested page or post is not found
+*
+* @package SWTK
+* @subpackage Funny_Colors
+* @since Funny Colors 1.0
+*/
+ ?>
 <?php get_header(); ?>
 
 

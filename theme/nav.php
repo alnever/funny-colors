@@ -1,3 +1,15 @@
+<?php
+/**
+ * The template's part with the header menu of the site
+ *
+ * The part is included into the pages and defines the position of the main/header menu
+ *
+ * @package SWTK
+ * @subpackage Funny_Colors
+ * @since Funny Colors 1.0
+ */
+ ?>
+
 <nav class="swtk-navbar">
     <div class="swtk-brand-toggle">
         <div class="swtk-brand">

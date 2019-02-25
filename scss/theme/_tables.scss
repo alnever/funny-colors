@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead, tfoot {
+        * {
+            font-family: $font-primary;
+            font-size: $font-regular;
+            font-weight: bold;
+            color: $primary;
+        }
+    }
+
+    thead {
+        border-bottom: 1px solid $accent;
+    }
+
+    tfoot {
+        border-top: 1px solid $accent;
+    }
+
+    tr {
+        border-bottom: 1px solid $light;
+    }
+
+    td, th {
+        padding: $padding / 2
+    }
+
+}

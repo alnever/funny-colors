@@ -2086,3 +2086,20 @@ dl.gallery-item {
     color: #2c2c2d; }
   dl.gallery-item:hover dd.gallery-caption {
     display: block; }
+
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table thead *, table tfoot * {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4abdac; }
+  table thead {
+    border-bottom: 1px solid #f76733; }
+  table tfoot {
+    border-top: 1px solid #f76733; }
+  table tr {
+    border-bottom: 1px solid #dfdce3; }
+  table td, table th {
+    padding: 0.5em; }

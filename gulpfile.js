@@ -11,7 +11,9 @@ var commonjs = require('rollup-plugin-commonjs');
 
 
 var sassSource = './scss/style.scss';
+var sassEditor = './scss/editor-style.scss';
 var cssDest = './theme/css';
+var cssEditorDest = './theme';
 var jsSource = './src/index.js';
 var jsInput = './src/index.js';
 var jsDest = './theme/js';
@@ -22,6 +24,13 @@ gulp.task('styles',function() {
 		.pipe(sass().on('error', sass.logError))
 		// .pipe(clean())
 		.pipe(gulp.dest(cssDest));
+});
+
+gulp.task('editor',function() {
+	return gulp.src(sassEditor)
+		.pipe(sass().on('error', sass.logError))
+		// .pipe(clean())
+		.pipe(gulp.dest(cssEditorDest));
 });
 
 gulp.task('scripts', function () {
@@ -41,4 +50,5 @@ gulp.task('scripts', function () {
 gulp.task('watch', function(){
 	gulp.watch(sassSource, gulp.series('styles'));
 	gulp.watch(jsSource, gulp.series('scripts'));
+	gulp.watch(sassEditor, gulp.series('editor'));
 });

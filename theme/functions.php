@@ -1,4 +1,13 @@
 <?php
+/**
+ * Functions for the Funny Colors Theme
+ *
+ * The file contains the definitions  of the theme features, menus, sidebars and custimizable options
+ *
+ * @package SWTK
+ * @subpackage Funny_Colors
+ * @since Funny Colors 1.0
+ */
 
 // define content width
 
@@ -17,11 +26,10 @@ add_action('after_setup_theme','funny_colors_register_textdomain');
 // add theme support
 
 function funny_colors_setup() {
-	add_theme_support('featured-image');
 	add_theme_support('custom-header');
 	add_theme_support('title-tag');
 	add_theme_support('automatic-feed-links');
-	add_theme_support('post-types');
+	add_theme_support('post-formats');
 	add_theme_support('custom-logo', array(
 	    'height'      => 200,
 	    'width'       => 200,
@@ -33,12 +41,25 @@ function funny_colors_setup() {
 	add_theme_support( "post-thumbnails" );
 	add_theme_support( "custom-background" );
 
-	// editor style
-
-	add_editor_style(get_theme_file_uri('/css/style.css'));
 }
 
 add_action('after_setup_theme', 'funny_colors_setup');
+
+// add editor style for old versions
+
+add_editor_style();
+
+// add editor style for Gutenberg
+
+function funny_colors_block_editor_styles() {
+    wp_enqueue_style(
+		'funny-colors-block-editor-styles',
+		get_theme_file_uri( 'editor-style.css' ),
+		false
+	);
+}
+
+add_action( 'enqueue_block_editor_assets', 'funny_colors_block_editor_styles' );
 
 // enqueue styles and scripts
 
@@ -110,7 +131,7 @@ function funny_colors_register_footer_text_option ($wp_customize) {
     ]);
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'footer_text',[
-        'title' => __('Footer text','funny-colors'),
+        'label' => __('Footer text','funny-colors'),
         'type'  => 'textarea',
         'section' => 'footer_text_section',
         'setting' => 'footer_text',
@@ -174,40 +195,40 @@ function funny_colors_register_footer_socials($wp_customize) {
     ]);
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'social_link_1',[
-        'title' => __('Social link 1','funny-colors'),
+        'label' => __('Social link 1','funny-colors'),
         'type'  => 'url',
         'section' => 'footer_socials_section',
         'setting' => 'social_link_1',
     ]));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'social_icon_1',[
-        'title' => __('Social icon 1','funny-colors'),
+        'label' => __('Social icon 1','funny-colors'),
         'section' => 'footer_socials_section',
         'setting' => 'social_icon_1',
     ]));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'social_link_2',[
-        'title' => __('Social link 2','funny-colors'),
+        'label' => __('Social link 2','funny-colors'),
         'type'  => 'url',
         'section' => 'footer_socials_section',
         'setting' => 'social_link_2',
     ]));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'social_icon_2',[
-        'title' => __('Social icon 2','funny-colors'),
+        'label' => __('Social icon 2','funny-colors'),
         'section' => 'footer_socials_section',
         'setting' => 'social_icon_2',
     ]));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'social_link_3',[
-        'title' => __('Social link 3','funny-colors'),
+        'label' => __('Social link 3','funny-colors'),
         'type'  => 'url',
         'section' => 'footer_socials_section',
         'setting' => 'social_link_3',
     ]));
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'social_icon_3',[
-        'title' => __('Social icon 3','funny-colors'),
+        'label' => __('Social icon 3','funny-colors'),
         'section' => 'footer_socials_section',
         'setting' => 'social_icon_3',
     ]));

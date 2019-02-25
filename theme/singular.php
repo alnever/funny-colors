@@ -1,3 +1,14 @@
+<?php
+/**
+ * The template to show the singular posts and pages
+ *
+ * The template shows a singular post or page
+ *
+ * @package SWTK
+ * @subpackage Funny_Colors
+ * @since Funny Colors 1.0
+ */
+ ?>
 <?php get_header(); ?>
 
 
