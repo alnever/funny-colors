@@ -24,6 +24,7 @@ The main goal of the project is to check how useful is the kit.
 * Support of the editor-style was added for Gutenberg
 * Tables were stylized
 * Custom logo issues were fixed
+* The typography was stylized for code, pre, quotes etc.
 
 = 0.5 =
 * Templates were modified: index.php, singular.php, attachment.php

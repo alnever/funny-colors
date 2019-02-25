@@ -45,3 +45,26 @@ p, li {
   font-size: $font-regular;
   color: $dark;
 }
+
+
+code, pre {
+    font-family: $font-mono;
+    font-size: $font-code;
+    color: $dark;
+}
+
+blockquote {
+    padding: $padding;
+    border-left: 1px solid $primary;
+
+    * {
+        font-family: $font-secondary;
+        font-size: $font-smaller;
+    }
+
+    cite {
+        font-family: $font-secondary;
+        font-size: $font-regular;
+        color: $primary;
+    }
+}
