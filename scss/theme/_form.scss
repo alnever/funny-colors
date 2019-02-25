@@ -1,5 +1,10 @@
 input[type='text'],
 input[type='password'],
+input[type='email'],
+input[type='file'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
 textarea {
     @include input-text($font-primary, $font-regular, $primary);
     width: 100%;
@@ -11,4 +16,16 @@ input[type='cancel']
  {
     @include button($font-primary, $font-regular, $primary);
     height: auto;
+}
+
+select,
+input[type='date'] {
+    @include select($font-primary, $font-regular, $primary, $white);
+    width: 100%;
+}
+
+
+input[type='checkbox'],
+input[type='radio'] {
+    @include checkbox ($font-primary, $font-regular, $primary);
 }

@@ -22,6 +22,10 @@ An answer to that question.
 == Changelog ==
 
 = 0.6 =
+* Comments were stylized
+* Issues with navigation and pagination were fixed
+* Control elements were stylized
+* Styling of the control elements were checked used Contact Form 7 plugin
 
 = 0.5 =
 * Templates were modified: index.php, singular.php, attachment.php

@@ -1,3 +1,61 @@
 .swtk-comments {
     @include comments();
+    padding: $padding;
+
+    border-top: 1px solid $accent;
+
+    @include comments-title() {
+        @extend .swtk-h3;
+        font-family: $font-primary;
+    }
+
+    @include comments-list() {
+        padding-left: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+
+    @include comment-author {
+        .avatar {
+            float: left;
+            padding: 0 $padding $padding 0;
+        }
+
+        cite.fn {
+            font-family: $font-primary;
+            font-size: $font-regular;
+            color: $secondary;
+            font-weight: bold;
+            padding-right: $padding;
+        }
+
+        .says {
+            font-family: $font-primary;
+            font-size: $font-regular;
+        }
+    }
+
+    @include comment-meta() {
+        a {
+            @include link($primary, $accent, false);
+            font-family: $font-primary;
+            font-size: $font-code;
+        }
+    }
+
+    @include comment-reply() {
+        a {
+            @include link($secondary, $accent, false);
+            font-family: $font-primary;
+            font-size: $font-code;
+        }
+    }
+
+    @include comment-body() {
+        padding: $padding 0 $padding 0;
+        border-top: 1px solid $accent;
+    }
+
+
 }

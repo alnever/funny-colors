@@ -134,3 +134,14 @@
         @content;
     }
 }
+
+@mixin post-pages($display: flex, $order: 0) {
+    .swtk-post-pages {
+        display: $display;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        order: $order;
+        @content;
+    }
+}

@@ -349,17 +349,11 @@
 * posts pagination
 */
 
-@mixin pagination() {
-    nav.swtk-pagination {
-        & > .screen-reader-text {
-            display: none;
-        }
-    }
-}
 
-@mixin posts-navigation() {
+@mixin pagination() {
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
 }

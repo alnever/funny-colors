@@ -254,6 +254,27 @@ article.swtk-post-single {
           }
       }
   }
+
+  @include post-pages(flex, 8) {
+      .swtk-post-pages_numbers {
+          display: flex;
+          flex-direction: row;
+      }
+
+      & > * {
+          font-family: $font-primary;
+          font-size: $font-regular;
+          margin-right: $padding;
+      }
+
+      a {
+          color: $secondary;
+
+          &:hover {
+              color: $accent;
+          }
+      }
+  }
 } /*  .swtk-post-single */
 
 .sticky,

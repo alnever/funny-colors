@@ -16,6 +16,12 @@ The main goal of the project is to check how useful is the kit.
 
 ## Change log
 
+= 0.6 =
+* Comments were stylized
+* Issues with navigation and pagination were fixed
+* Control elements were stylized
+* Styling of the control elements were checked used Contact Form 7 plugin
+
 = 0.5 =
 * Templates were modified: index.php, singular.php, attachment.php
 * Standard WordPress widgets are supported: archives, categories, tag cloud, navigation, gallery etc.
@@ -32,5 +38,3 @@ which will be shown in the footer area
 = 0.1 =
 * The theme was initially generated using the kit.
 * All necessary identifications where replaced.
-
-TODO: It's necessary to merge changes done in this project with the SWTK.

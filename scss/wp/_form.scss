@@ -17,3 +17,31 @@
     @include badge-outline($font, $font-size, $color);
     padding: $padding / 2;
 }
+
+@mixin select($font, $font-size, $color, $bg-color) {
+    font-family: $font;
+    font-size: $font-size;
+    color: $color;
+    padding: $padding / 2;
+
+    border: 1px solid $color;
+    border-radius: $border-radius;
+
+    background-color: $bg-color;
+}
+
+@mixin checkbox($font, $font-size, $color) {
+    font-family: $font;
+    font-size: $font-size;
+    color: $color;
+    padding: $padding / 2;
+
+    max-width: $max-control-size;
+    max-height: $max-control-size;
+
+    width: $max-control-size;
+    height: $max-control-size;
+
+    border: 1px solid $color;
+    border-radius: $border-radius;
+}

@@ -1578,6 +1578,11 @@ div.swtk-comments-pagination {
 
 input[type='text'],
 input[type='password'],
+input[type='email'],
+input[type='file'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
 textarea {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -1616,6 +1621,30 @@ input[type='cancel'] {
     text-decoration: none;
     color: #4abdac;
     background: none; }
+
+select,
+input[type='date'] {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #4abdac;
+  padding: 0.5em;
+  border: 1px solid #4abdac;
+  border-radius: 0;
+  background-color: #ffffff;
+  width: 100%; }
+
+input[type='checkbox'],
+input[type='radio'] {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #4abdac;
+  padding: 0.5em;
+  max-width: 18px;
+  max-height: 18px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #4abdac;
+  border-radius: 0; }
 
 article.swtk-post-index {
   display: flex;
