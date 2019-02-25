@@ -23,6 +23,7 @@ The main goal of the project is to check how useful is the kit.
 * Styling of the control elements were checked used Contact Form 7 plugin
 * Support of the editor-style was added for Gutenberg
 * Tables were stylized
+* Custom logo issues were fixed
 
 = 0.5 =
 * Templates were modified: index.php, singular.php, attachment.php

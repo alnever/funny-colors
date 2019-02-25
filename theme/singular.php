@@ -20,8 +20,10 @@
             <div class="swtk-header-logo">
                 <?php
                     $custom_logo_id = get_theme_mod( 'custom_logo' );
-                    $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-                    echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+                    if ($custom_logo_id) {
+                        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                        echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+                    }
                 ?>
             </div>
             <div class="swtk-header-text-block">

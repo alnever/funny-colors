@@ -1,7 +1,11 @@
 @mixin header($bg-color, $bg-image : '') {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+
+    @include media-break-up($medium) {
+        flex-direction: row;
+        align-items: center;
+    }
 
     padding: $padding * 2;
 
@@ -12,12 +16,17 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    .swtk-header-logo {
-        padding: $padding;
-    }
 
     .swtk-header-text-block {
         padding: $padding;
+    }
+}
+
+@mixin header-logo($width, $height) {
+    .swtk-header-logo {
+        padding: $padding;
+        max-width: $width;
+        max-height: $height;
     }
 }
 

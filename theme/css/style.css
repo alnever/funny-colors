@@ -270,8 +270,7 @@ header, .swtk-header {
   align-self: center;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   padding: 2em;
   background-color: #4abdac;
   background-image: "";
@@ -281,8 +280,10 @@ header, .swtk-header {
   @media only screen and (min-width: 768px) {
     header, .swtk-header {
       width: 100%; } }
-  header .swtk-header-logo, .swtk-header .swtk-header-logo {
-    padding: 1em; }
+  @media only screen and (min-width: 768px) {
+    header, .swtk-header {
+      flex-direction: row;
+      align-items: center; } }
   header .swtk-header-text-block, .swtk-header .swtk-header-text-block {
     padding: 1em; }
   header .swtk-header-title, .swtk-header .swtk-header-title {
@@ -293,6 +294,10 @@ header, .swtk-header {
     font-family: "Roboto Slab", serif;
     font-size: 32px;
     color: #ffffff; }
+  header .swtk-header-logo, .swtk-header .swtk-header-logo {
+    padding: 1em;
+    max-width: 200px;
+    max-height: 200px; }
 
 .swtk-content {
   display: flex;

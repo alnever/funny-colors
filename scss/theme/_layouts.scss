@@ -22,6 +22,7 @@ header, .swtk-header {
   @include header($primary);
   @include header-title($font-primary, $font-enorm, $white);
   @include header-text($font-secondary, $font-large, $white);
+  @include header-logo(200px, 200px);
 }
 
 .swtk-content {
