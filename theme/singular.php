@@ -86,7 +86,7 @@
                                 <?php endif; ?>
                                 <div class="swtk-post-pages">
                                     <?php wp_link_pages([
-                                        'before' => '<p><img src="' . __(get_theme_file_uri('/icons/copy.svg')) . '" class="swtk-icon" />',
+                                        'before' => '<p><img src="' . get_theme_file_uri('/icons/copy.svg') . '" class="swtk-icon" />',
                                         'after'  => '</p>',
                                     ]); ?>
                                 </div>

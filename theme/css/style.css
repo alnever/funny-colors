@@ -1857,18 +1857,22 @@ article.swtk-post-single {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    order: 8; }
-    article.swtk-post-single .swtk-post-pages .swtk-post-pages_numbers {
-      display: flex;
-      flex-direction: row; }
-    article.swtk-post-single .swtk-post-pages > * {
+    order: 8;
+    margin-right: 1em; }
+    article.swtk-post-single .swtk-post-pages * {
+      margin-right: 1em;
       font-family: "Roboto", sans-serif;
-      font-size: 14px;
-      margin-right: 1em; }
+      font-size: 14px; }
     article.swtk-post-single .swtk-post-pages a {
-      color: #fc4a1a; }
+      color: #fc4a1a;
+      text-decoration: none;
+      margin-left: 1em; }
       article.swtk-post-single .swtk-post-pages a:hover {
-        color: #f76733; }
+        color: #f76733;
+        text-decoration: none; }
+      article.swtk-post-single .swtk-post-pages a:active {
+        color: #f76733;
+        text-decoration: none; }
 
 /*  .swtk-post-single */
 .sticky,

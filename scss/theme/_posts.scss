@@ -256,23 +256,17 @@ article.swtk-post-single {
   }
 
   @include post-pages(flex, 8) {
-      .swtk-post-pages_numbers {
-          display: flex;
-          flex-direction: row;
-      }
+      margin-right: $padding;
 
-      & > * {
+      * {
+          margin-right: $padding;
           font-family: $font-primary;
           font-size: $font-regular;
-          margin-right: $padding;
       }
 
       a {
-          color: $secondary;
-
-          &:hover {
-              color: $accent;
-          }
+          @include link($secondary, $accent, false);
+          margin-left: $padding;
       }
   }
 } /*  .swtk-post-single */
