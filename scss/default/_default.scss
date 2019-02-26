@@ -17,80 +17,61 @@ img {
   height: auto;
 }
 
-.alignnone {
-    margin: 5px 20px 20px 0;
+.alignnone,
+a img.alignnone,
+.wp-caption.alignnone {
+    margin: $padding/2 $padding $padding 0;
 }
 
 .aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
-}
-
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
+div.aligncenter,
 a img.aligncenter {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: $padding/2 auto $padding/2 auto;
+}
+
+.alignright,
+div.alignright,
+a img.alignright,
+.wp-caption.alignright {
+    display: block;
+    float: right ;
+    margin: $padding/2 0 $padding $padding;
+}
+
+.alignleft,
+div.alignleft,
+a img.alignleft,
+.wp-caption.alignleft {
+    display: block;
+    float: left;
+    margin: $padding/2 $padding/2 $padding 0;
 }
 
 .wp-caption {
     background: #fff;
     border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
+    max-width: 100%; /* Image does not overflow the content area */
+    padding: $padding/2 $padding/2 $padding $padding/2;
     text-align: center;
 }
 
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
 
 .wp-caption img {
     border: 0 none;
     height: auto;
     margin: 0;
-    max-width: 98.5%;
+    max-width: 100%;
     padding: 0;
     width: auto;
 }
 
 .wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
+    font-family: $font-primary;
+    font-size: $font-code;
+    color: $dark;
     margin: 0;
-    padding: 0 4px 5px;
+    padding: 0 $padding/2 $padding/2;
 }
 
 /* Text meant only for screen readers. */
@@ -102,14 +83,14 @@ a img.aligncenter {
 	margin: -1px;
 	overflow: hidden;
 	padding: 0;
-	position: absolute !important;
+	position: absolute  ;
 	width: 1px;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+	word-wrap: normal  ; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
 	background-color: #eee;
-	clip: auto !important;
+	clip: auto  ;
 	clip-path: none;
 	color: #444;
 	display: block;
@@ -117,7 +98,7 @@ a img.aligncenter {
 	height: auto;
 	left: 5px;
 	line-height: normal;
-	padding: 15px 23px 14px;
+	padding: $padding/2 $padding/ $padding/2;
 	text-decoration: none;
 	top: 5px;
 	width: auto;

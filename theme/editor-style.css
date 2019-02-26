@@ -16,68 +16,55 @@ img {
   max-width: 100%;
   height: auto; }
 
-.alignnone {
-  margin: 5px 20px 20px 0; }
+.alignnone,
+a img.alignnone,
+.wp-caption.alignnone {
+  margin: 0.5em 1em 1em 0; }
 
 .aligncenter,
-div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto; }
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-a img.alignnone {
-  margin: 5px 20px 20px 0; }
-
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
+div.aligncenter,
 a img.aligncenter {
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0.5em auto 0.5em auto; }
+
+.alignright,
+div.alignright,
+a img.alignright,
+.wp-caption.alignright {
+  display: block;
+  float: right;
+  margin: 0.5em 0 1em 1em; }
+
+.alignleft,
+div.alignleft,
+a img.alignleft,
+.wp-caption.alignleft {
+  display: block;
+  float: left;
+  margin: 0.5em 0.5em 1em 0; }
 
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
-  max-width: 96%;
+  max-width: 100%;
   /* Image does not overflow the content area */
-  padding: 5px 3px 10px;
+  padding: 0.5em 0.5em 1em 0.5em;
   text-align: center; }
-
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignleft {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignright {
-  margin: 5px 0 20px 20px; }
 
 .wp-caption img {
   border: 0 none;
   height: auto;
   margin: 0;
-  max-width: 98.5%;
+  max-width: 100%;
   padding: 0;
   width: auto; }
 
 .wp-caption p.wp-caption-text {
-  font-size: 11px;
-  line-height: 17px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #2c2c2d;
   margin: 0;
-  padding: 0 4px 5px; }
+  padding: 0 0.5em 0.5em; }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -88,14 +75,14 @@ a img.aligncenter {
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute !important;
+  position: absolute;
   width: 1px;
-  word-wrap: normal !important;
+  word-wrap: normal;
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
 
 .screen-reader-text:focus {
   background-color: #eee;
-  clip: auto !important;
+  clip: auto;
   clip-path: none;
   color: #444;
   display: block;
@@ -103,7 +90,7 @@ a img.aligncenter {
   height: auto;
   left: 5px;
   line-height: normal;
-  padding: 15px 23px 14px;
+  padding: 0.5em 0.5;
   text-decoration: none;
   top: 5px;
   width: auto;

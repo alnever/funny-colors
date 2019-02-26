@@ -182,7 +182,7 @@ article.swtk-post-single {
       }
   }
 
-  @include post-content(flex, 5) {
+  @include post-content(block, 5) {
       flex-direction: column;
       margin-bottom: $padding / 2;
   }
