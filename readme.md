@@ -25,6 +25,7 @@ The main goal of the project is to check how useful is the kit.
 * Tables were stylized
 * Custom logo issues were fixed
 * The typography was stylized for code, pre, quotes etc.
+* Icons were replaced with generated using https://icomoon.io
 
 = 0.5 =
 * Templates were modified: index.php, singular.php, attachment.php

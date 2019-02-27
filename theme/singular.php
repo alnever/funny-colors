@@ -76,7 +76,7 @@
                                      ?>
                                 </div>
                                 <div class="swtk-post-author">
-                                    <img class="swtk-icon" src="<?php echo get_theme_file_uri('/icons/edit.svg'); ?>"/ >
+                                    <img class="swtk-icon" src="<?php echo get_theme_file_uri('/icons/author.svg'); ?>"/ >
                                     <?php the_author_link(); ?>
                                 </div>
                                 <div class="swtk-post-date">
@@ -87,19 +87,19 @@
                                 </div>
                                 <?php if (has_category()): ?>
                                     <div class="swtk-post-categories">
-                                        <img src="<?php echo get_theme_file_uri('/icons/folder.svg') ?>" class="swtk-icon">
+                                        <img src="<?php echo get_theme_file_uri('/icons/category.svg') ?>" class="swtk-icon">
                                         <?php the_category(); ?>
                                     </div>
                                 <?php endif; ?>
                                 <?php if (has_tag()): ?>
                                     <div class="swtk-post-tags">
-                                        <img src="<?php echo get_theme_file_uri('/icons/price-tag.svg') ?>" class="swtk-icon">
+                                        <img src="<?php echo get_theme_file_uri('/icons/tags.svg') ?>" class="swtk-icon">
                                         <?php the_tags('','',''); ?>
                                     </div>
                                 <?php endif; ?>
                                 <div class="swtk-post-pages">
                                     <?php wp_link_pages([
-                                        'before' => '<p><img src="' . get_theme_file_uri('/icons/copy.svg') . '" class="swtk-icon" />',
+                                        'before' => '<p><img src="' . get_theme_file_uri('/icons/pages.svg') . '" class="swtk-icon" />',
                                         'after'  => '</p>',
                                     ]); ?>
                                 </div>
