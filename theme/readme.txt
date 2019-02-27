@@ -51,4 +51,4 @@ which will be shown in the footer area
 == Resources ==
 
 * SASS WordPress Theming Kit http://github.com/alnever/sass-wordpress-theming-kit
-* Icons were using https://icomoon.io
+* Icons from the free icon set of https://icomoon.io
