@@ -290,7 +290,7 @@ article.swtk-post-sticky {
   @include post-date(flex, 1) {
       font-family: $font-primary;
       font-size: $font-regular;
-      color: $accent;
+      color: $secondary;
       text-transform: uppercase;
       margin-bottom: $padding / 2;
   }

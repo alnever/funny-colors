@@ -119,7 +119,7 @@ h2, .swtk-h2 {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: bold;
-  color: #fc4a1a; }
+  color: #4abdac; }
 
 h3, .swtk-h3 {
   font-family: "Roboto", sans-serif;
@@ -131,7 +131,7 @@ h4, .swtk-h4 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  color: #fc4a1a; }
+  color: #4abdac; }
 
 h5, .swtk-h5 {
   font-family: "Roboto", sans-serif;
@@ -143,7 +143,7 @@ h6, .swtk-h6 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #fc4a1a; }
+  color: #4abdac; }
 
 p, li {
   font-family: "Roboto Slab", serif;
@@ -170,10 +170,10 @@ a {
   color: #4abdac;
   text-decoration: none; }
   a:hover {
-    color: #f76733;
+    color: #f7B733;
     text-decoration: none; }
   a:active {
-    color: #f76733;
+    color: #f7B733;
     text-decoration: none; }
 
 table {
@@ -185,9 +185,9 @@ table {
     font-weight: bold;
     color: #4abdac; }
   table thead {
-    border-bottom: 1px solid #f76733; }
+    border-bottom: 1px solid #f7B733; }
   table tfoot {
-    border-top: 1px solid #f76733; }
+    border-top: 1px solid #f7B733; }
   table tr {
     border-bottom: 1px solid #dfdce3; }
   table td, table th {
